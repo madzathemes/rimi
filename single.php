@@ -7,7 +7,7 @@
 get_header();
 
 $style = get_post_meta(get_the_ID(), "magazin_post_style", true);
-$option = get_option("mellany_theme_options");
+$option = get_option("rimi_theme_options");
 $default = "";
 if(!empty($option['post_style'])) {
 	$default = $option['post_style'];

@@ -36,7 +36,7 @@ require get_template_directory() .'/inc/single/single-styles.php';
 /*-----------------------------------------------------------------------------------*/
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
-function mellany_theme_setup() {
+function rimi_theme_setup() {
 
 	add_editor_style();
 	add_theme_support( 'post-formats', array('video', 'gallery') );
@@ -45,7 +45,7 @@ function mellany_theme_setup() {
 	add_theme_support( 'woocommerce' );
 	add_theme_support( "title-tag" );
 
-	load_theme_textdomain( 'mellany', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'rimi', get_template_directory() . '/languages' );
 	$locale = get_locale();
 	$locale_file = get_template_directory() . "/languages/$locale.php";
 	if ( is_readable( $locale_file ) )
@@ -54,14 +54,14 @@ function mellany_theme_setup() {
 	set_post_thumbnail_size( 999, 999, true );
 
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Header Menu', 'mellany' ),
-		'mobile' => esc_html__( 'Mobile Menu', 'mellany' ),
-		'footer_menu' => esc_html__( 'Footer Navigation', 'mellany' ),
+		'primary' => esc_html__( 'Header Menu', 'rimi' ),
+		'mobile' => esc_html__( 'Mobile Menu', 'rimi' ),
+		'footer_menu' => esc_html__( 'Footer Navigation', 'rimi' ),
 	) );
 	if ( ! isset( $content_width ) ) { $content_width = 900; }
 }
 
-add_action( 'after_setup_theme', 'mellany_theme_setup' );
+add_action( 'after_setup_theme', 'rimi_theme_setup' );
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -73,19 +73,19 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 740;
 }
 
-function mellany_import_files() {
+function rimi_import_files() {
     return array(
         array(
-            'import_file_name'             => esc_html__( 'Demo 1', 'mellany' ),
+            'import_file_name'             => esc_html__( 'Demo 1', 'rimi' ),
             'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/import/demo1/demo.xml',
             'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo1/customizer.dat',
-            'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'mellany' ),
+            'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'rimi' ),
         )
     );
 }
-add_filter( 'pt-ocdi/import_files', 'mellany_import_files' );
+add_filter( 'pt-ocdi/import_files', 'rimi_import_files' );
 
-function mellany_after_import_setup() {
+function rimi_after_import_setup() {
     // Assign menus to their locations.
     $main_menu = get_term_by( 'name', 'Header', 'nav_menu' );
 		$mobile_menu = get_term_by( 'name', 'Mobile Menu', 'nav_menu' );
@@ -105,4 +105,4 @@ function mellany_after_import_setup() {
     update_option( 'page_on_front', $front_page_id->ID );
 
 }
-add_action( 'pt-ocdi/after_import', 'mellany_after_import_setup' );
+add_action( 'pt-ocdi/after_import', 'rimi_after_import_setup' );

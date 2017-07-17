@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 <div class="mt-container-wrap">
-	<?php mellany_title(); ?>
+	<?php rimi_title(); ?>
 <div class="container mt-content-container">
 <div class="row">
 
@@ -37,20 +37,20 @@
 					if ( $the_query->have_posts() ) : ?>
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-							<h2><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'mellany' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo get_the_title();  ?></a></h2>
+							<h2><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo get_the_title();  ?></a></h2>
 						<?php endwhile; ?>
 						<?php wp_reset_postdata(); ?>
 					<?php else : ?>
-						<p><?php esc_html_e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'mellany'  ); ?></p>
+						<p><?php esc_html_e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'rimi'  ); ?></p>
 					<?php endif;
 
 			} ?>
 
 		<?php else : ?>
 						<div id="post-0" class="post no-results not-found">
-							<h2 class="entry-title"><?php esc_html_e( 'Nothing Found', 'mellany'  ); ?></h2>
+							<h2 class="entry-title"><?php esc_html_e( 'Nothing Found', 'rimi'  ); ?></h2>
 							<div class="entry-content">
-								<p><?php esc_html_e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'mellany'  ); ?></p>
+								<p><?php esc_html_e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'rimi'  ); ?></p>
 
 							</div>
 						</div>

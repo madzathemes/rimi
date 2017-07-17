@@ -9,7 +9,7 @@
 
 </head>
 <?php
-$option = get_option("mellany_theme_options");
+$option = get_option("rimi_theme_options");
 $time = "";
 if  (!empty($option['menu_top_ad'])) {
 	 if  ($option['menu_top_ad']!="ad") {
@@ -43,13 +43,13 @@ if(!empty($style)){
 
 <div class="mt-smart-menu menu-background">
 	<span class="close pointer"></span>
-	<?php mellany_socials(); ?>
-	<?php mellany_nav_mobile(); ?>
+	<?php rimi_socials(); ?>
+	<?php rimi_nav_mobile(); ?>
 </div>
 
 
 <div class="mt-outer-wrap">
 
-<?php mellany_header_fixed(); ?>
+<?php rimi_header_fixed(); ?>
 
-<?php mellany_header(); ?>
+<?php rimi_header(); ?>

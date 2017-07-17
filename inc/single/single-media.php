@@ -1,4 +1,4 @@
-<?php function mellany_single_media() {
+<?php function rimi_single_media() {
 
   $images = get_post_meta( get_the_ID(), 'magazin_post_gallery_images', 1 );
   $videos = get_post_meta(get_the_ID(), "magazin_video_url", true);
@@ -49,4 +49,4 @@
   <?php } ?>
 
 <?php } ?>
-<?php add_filter('mellany_single_media','mellany_single_media'); ?>
+<?php add_filter('rimi_single_media','rimi_single_media'); ?>

@@ -27,7 +27,7 @@ if ($mt_layout == "left") {
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
 
-		<?php mellany_paging_nav(); ?>
+		<?php rimi_paging_nav(); ?>
 
 	</div>
 

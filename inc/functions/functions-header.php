@@ -1,6 +1,6 @@
-<?php function mellany_header() {
+<?php function rimi_header() {
 $allowed_html = array('ins' => array( 'class' => array(), 'style' => array(),'data-ad-client' => array(),'data-ad-slot' => array(),'data-ad-format' => array()), 'iframe' => array( 'id' => array(),'name' => array(),'src' => array(),'style' => array(),'scrolling' => array(),'frameborder' => array()), 'script' => array( 'async' => array(), 'type' => array(),'src' => array()), 'noscript' => array(), 'small' => array( 'class' => array()), 'img' => array( 'src' => array(), 'alt' => array(), 'class' => array(), 'width' => array(), 'height' => array() ), 'a' => array( 'href' => array(), 'title' => array() ), 'br' => array(), 'i' => array('class' => array()),  'em' => array(), 'strong' => array(), 'div' => array('class' => array()), 'span' => array('class' => array()));
-$option = get_option("mellany_theme_options");
+$option = get_option("rimi_theme_options");
 $optioz = get_option("magazin_theme_options");
 $page_option = get_post_meta(get_the_ID(), "magazin_menu_background_width", true);
 if(!empty($page_option)) {
@@ -38,13 +38,13 @@ if(!empty($option['mobile_header_type'])) {
 			<span class="mt-m-cool-button-line"></span>
 		</div>
 	</div>
-	<div class="mt-mobile-logo"><?php mellany_logo_mobile(); ?></div>
+	<div class="mt-mobile-logo"><?php rimi_logo_mobile(); ?></div>
 	<?php if ( true == get_theme_mod( 'mt_menu_search', true ) ) { ?>
 		<div class="nav-search-wrap pull-right">
 			<div class="nav-search pointer"></div>
 			<div class="nav-search-input">
 				<form method="get" class="searchform" action="<?php echo esc_url(home_url('/')); ?>/">
-					<input type="text" placeholder="<?php esc_html_e( 'Type and hit enter to search ...', 'mellany' ); ?>"  name="s" >
+					<input type="text" placeholder="<?php esc_html_e( 'Type and hit enter to search ...', 'rimi' ); ?>"  name="s" >
 				</form>
 			</div>
 		</div>
@@ -58,7 +58,7 @@ if(!empty($option['mobile_header_type'])) {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="head container-fluid">
-						<div class="head-logo"><?php mellany_logo(); ?></div>
+						<div class="head-logo"><?php rimi_logo(); ?></div>
 						<?php if  (!empty($option['menu_top_ad'])) {  ?>
 							<?php if  ($option['menu_top_ad']=="ad") {  ?>
 								<div class="top-ad">
@@ -68,8 +68,8 @@ if(!empty($option['mobile_header_type'])) {
 								    </div>
 								  <?php } ?>
 								</div>
-							<?php } else { echo mellany_top_content(); } ?>
-						<?php } else { echo mellany_top_content(); } ?>
+							<?php } else { echo rimi_top_content(); } ?>
+						<?php } else { echo rimi_top_content(); } ?>
 					</div>
 				</div>
 			</div>
@@ -89,12 +89,12 @@ if(!empty($option['mobile_header_type'])) {
 						</div>
 
 						<div class="nav pull-left">
-							<?php mellany_nav(); ?>
+							<?php rimi_nav(); ?>
 						</div>
 
 						<?php if(!empty($option['header_link_url'])) { ?>
 								<div class="nav-url pull-right">
-									<a href="<?php echo esc_url($option['header_link_url']);  ?>" <?php if ( true == get_theme_mod( 'mt_header_link_blank', true ) ) {  ?>target="_blank" <?php } ?>><?php echo balanceTags(get_theme_mod('mellany_header_link_name', 'Download mellany')); ?></a>
+									<a href="<?php echo esc_url($option['header_link_url']);  ?>" <?php if ( true == get_theme_mod( 'mt_header_link_blank', true ) ) {  ?>target="_blank" <?php } ?>><?php echo balanceTags(get_theme_mod('rimi_header_link_name', 'Download rimi')); ?></a>
 								</div>
 						<?php } ?>
 
@@ -104,7 +104,7 @@ if(!empty($option['mobile_header_type'])) {
 								<div class="nav-search pointer"></div>
 								<div class="nav-search-input mt-radius">
 									<form method="get" action="<?php echo esc_url(home_url('/')); ?>/">
-										<input type="text" placeholder="<?php esc_html_e( 'Type and hit enter to search ...', 'mellany' ); ?>"  name="s" >
+										<input type="text" placeholder="<?php esc_html_e( 'Type and hit enter to search ...', 'rimi' ); ?>"  name="s" >
 									</form>
 								</div>
 							</div>
@@ -116,18 +116,18 @@ if(!empty($option['mobile_header_type'])) {
 		</div>
 	</div>
 </div>
-<?php } add_filter('mellany_header','mellany_header');
+<?php } add_filter('rimi_header','rimi_header');
 
-function mellany_top_content() { $option = get_option("mellany_theme_options"); ?>
+function rimi_top_content() { $option = get_option("rimi_theme_options"); ?>
 	<div class="head-nav">
-		<?php if(!empty($option['url_latest'])) { ?><a class="mt_l_latest <?php if($option['url_latest']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_latest'])); ?>"><?php esc_html_e( 'LATEST', 'mellany' ); ?> <span><?php esc_html_e( 'Posts', 'mellany' ); ?></span></a><?php } ?>
-		<?php if(!empty($option['url_popular'])) { ?><a class="mt_l_popular <?php if($option['url_popular']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_popular'])); ?>"><?php esc_html_e( 'POPULAR', 'mellany' ); ?> <span><?php esc_html_e( 'Posts', 'mellany' ); ?></span></a><?php } ?>
-		<?php if(!empty($option['url_hot'])) { ?><a class="mt_l_hot <?php if($option['url_hot']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_hot'])); ?>"><?php esc_html_e( 'HOT', 'mellany' ); ?> <span><?php esc_html_e( 'Posts', 'mellany' ); ?></span></a><?php } ?>
-		<?php if(!empty($option['url_trending'])) { ?>	<a class="mt_l_trending <?php if($option['url_trending']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_trending'])); ?>"><?php esc_html_e( 'TRENDING', 'mellany' ); ?> <span><?php esc_html_e( 'Posts', 'mellany' ); ?></span></a><?php } ?>
+		<?php if(!empty($option['url_latest'])) { ?><a class="mt_l_latest <?php if($option['url_latest']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_latest'])); ?>"><?php esc_html_e( 'LATEST', 'rimi' ); ?> <span><?php esc_html_e( 'Posts', 'rimi' ); ?></span></a><?php } ?>
+		<?php if(!empty($option['url_popular'])) { ?><a class="mt_l_popular <?php if($option['url_popular']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_popular'])); ?>"><?php esc_html_e( 'POPULAR', 'rimi' ); ?> <span><?php esc_html_e( 'Posts', 'rimi' ); ?></span></a><?php } ?>
+		<?php if(!empty($option['url_hot'])) { ?><a class="mt_l_hot <?php if($option['url_hot']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_hot'])); ?>"><?php esc_html_e( 'HOT', 'rimi' ); ?> <span><?php esc_html_e( 'Posts', 'rimi' ); ?></span></a><?php } ?>
+		<?php if(!empty($option['url_trending'])) { ?>	<a class="mt_l_trending <?php if($option['url_trending']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_trending'])); ?>"><?php esc_html_e( 'TRENDING', 'rimi' ); ?> <span><?php esc_html_e( 'Posts', 'rimi' ); ?></span></a><?php } ?>
 	</div>
 	<?php  if ( true == get_theme_mod( 'mt_header_social', true ) ) { ?>
 		<div class="head-social">
-			<?php mellany_socials(); ?>
+			<?php rimi_socials(); ?>
 		</div>
 	<?php } ?>
 	<?php  if ( true == get_theme_mod( 'mt_header_time', false ) ) { ?>
@@ -138,11 +138,11 @@ function mellany_top_content() { $option = get_option("mellany_theme_options"); 
 	<?php } ?>
 
 <?php }
-add_filter('mellany_top_content','mellany_top_content');
+add_filter('rimi_top_content','rimi_top_content');
 
-function mellany_logo() {
+function rimi_logo() {
 
-	$option = get_option("mellany_theme_options");
+	$option = get_option("rimi_theme_options");
 
 	// Fix for SSL
 	if(!empty($option['header_logo'])) {
@@ -171,11 +171,11 @@ function mellany_logo() {
 	<?php }
 }
 
-add_filter('mellany_logo','mellany_logo');
+add_filter('rimi_logo','rimi_logo');
 
-function mellany_logo_mobile() {
+function rimi_logo_mobile() {
 
-	$option = get_option("mellany_theme_options"); ?>
+	$option = get_option("rimi_theme_options"); ?>
 
 	<?php if(!empty($option['mobile_logo'])) { ?>
 		<a href="<?php echo esc_url(home_url('/'));?>">
@@ -187,30 +187,30 @@ function mellany_logo_mobile() {
 		</a>
 	<?php }
 }
-add_filter('mellany_logo_mobile','mellany_logo_mobile');
+add_filter('rimi_logo_mobile','rimi_logo_mobile');
 
-function mellany_nav() {
+function rimi_nav() {
 	if(class_exists('md_walker_')) {
 		wp_nav_menu( array('theme_location'=>"primary",  'menu_class' => 'sf-menu', 'walker'	=> new md_walker, 'echo' => true, 'depth' => 3));
 	} else {
 		wp_nav_menu( array('theme_location'=>"primary",  'menu_class' => 'sf-menu', 'echo' => true, 'depth' => 3));
 	}
 }
-add_filter('mellany_nav','mellany_nav');
+add_filter('rimi_nav','rimi_nav');
 
-function mellany_nav_fixed() {
+function rimi_nav_fixed() {
 	wp_nav_menu( array('theme_location'=>"primary",  'menu_class' => 'fixed-menu-ul',  'echo' => true, 'depth' => 1));
 }
-add_filter('mellany_nav_fixed','mellany_nav_fixed');
+add_filter('rimi_nav_fixed','rimi_nav_fixed');
 
-function mellany_nav_mobile() {
+function rimi_nav_mobile() {
 	wp_nav_menu( array('theme_location'=>"mobile",  'menu_class' => 'mobile',  'echo' => true, 'depth' => 2));
 }
-add_filter('mellany_nav_mobile','mellany_nav_mobile');
+add_filter('rimi_nav_mobile','rimi_nav_mobile');
 
-function mellany_socials() { ?>
+function rimi_socials() { ?>
 	<ul class="social"> <?php
-			$option = get_option("mellany_theme_options");
+			$option = get_option("rimi_theme_options");
 			if(!empty($option['mt_icon_twitter'])) {?><li><a <?php if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank" <?php }} ?> href="<?php echo esc_url($option['mt_icon_twitter']); ?>"><i class="ic-twitter"></i></a></li><?php }
 			if(!empty($option['mt_icon_facebook'])) {?><li><a <?php  if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank" <?php }} ?> href="<?php echo esc_url($option['mt_icon_facebook']); ?>" ><i class="ic-facebook"></i></a></li><?php }
 			if(!empty($option['mt_icon_intagram'])) {?><li><a <?php if(!empty($option['mt_icon_blank'])) {  if($option['mt_icon_blank']=="on") {?> target="_blank" <?php }} ?> href="<?php echo esc_url($option['mt_icon_intagram']); ?>" ><i class="ic-instagram"></i></a></li><?php }
@@ -224,9 +224,9 @@ function mellany_socials() { ?>
 			if(!empty($option['mt_icon_rss'])) {?><li><a <?php  if(!empty($option['mt_icon_blank'])) { if($option['mt_icon_blank']=="on") {?> target="_blank" <?php }} ?> href="<?php echo esc_url($option['mt_icon_rss']); ?>"><i class="ic-rss"></i></a></li><?php }
 			?>
 	</ul><?php
-} add_filter('mellany_socials','mellany_socials');
+} add_filter('rimi_socials','rimi_socials');
 
-function mellany_header_fixed() {
+function rimi_header_fixed() {
 	if (is_single()) {
 		/* Share Meta from Magazin framework */
 		$share = get_post_meta(get_the_ID(), "magazin_share_count", true);
@@ -243,23 +243,23 @@ function mellany_header_fixed() {
 		}
 		$url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
 		?>
-		<?php $option = get_option("mellany_theme_options"); ?>
+		<?php $option = get_option("rimi_theme_options"); ?>
 				<div class="fixed-top">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
 
 								<ul class="share">
-									<li class="share-facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank"><span><?php echo esc_html__('Share on Facebook', 'mellany'); ?></span></a></li>
+									<li class="share-facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank"><span><?php echo esc_html__('Share on Facebook', 'rimi'); ?></span></a></li>
 									<?php $input = get_the_title().' '.get_the_permalink(); $title = str_replace( ' ', '+', $input ); ?>
-									<li class="share-twitter"><a href="http://twitter.com/home/?status=<?php echo esc_attr($title); ?>" target="_blank"><span><?php echo esc_html__('Share on Twitter', 'mellany'); ?></span></a></li>
+									<li class="share-twitter"><a href="http://twitter.com/home/?status=<?php echo esc_attr($title); ?>" target="_blank"><span><?php echo esc_html__('Share on Twitter', 'rimi'); ?></span></a></li>
 									<li class="share-more">
 										<div class="share-more-wrap"><div class="share-more-icon">+</div></div>
 										<a href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank"><div class="google"></div></a>
 										<a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank"><div class="pinterest"></div></a>
 									</li>
 								</ul>
-								<span class="top-count stat-shares"><?php echo esc_attr($shares); ?> <?php esc_html_e('Shares', 'mellany'); ?></span>
+								<span class="top-count stat-shares"><?php echo esc_attr($shares); ?> <?php esc_html_e('Shares', 'rimi'); ?></span>
 								<span class="top-count stat-views"><?php if(function_exists('magazin_PostViews')){   echo esc_attr($viewes) + magazin_PostViews(get_the_ID()); } ?> Views</span>
 								<?php if (get_comments_number()!="0") { ?><span class="stat-comments top-count"><?php echo get_comments_number(); ?> Comments</span><?php } ?>
 							</div>
@@ -272,11 +272,11 @@ function mellany_header_fixed() {
 			<div class="row">
 				<div class="col-md-12">
 
-					<?php mellany_logo(); ?>
-					<?php mellany_nav_fixed(); ?>
+					<?php rimi_logo(); ?>
+					<?php rimi_nav_fixed(); ?>
 					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
 	</div>
-<?php } add_filter('mellany_header_fixed','mellany_header_fixed'); ?>
+<?php } add_filter('rimi_header_fixed','rimi_header_fixed'); ?>

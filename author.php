@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); $author_id = $curauth->nickname; ?>
 <div class="mt-container-wrap">
-	<?php mellany_title(); ?>
+	<?php rimi_title(); ?>
 	<div class="container mt-content-container">
 		<div class="row">
 			<div class="col-md-8  floatleft">

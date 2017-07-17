@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="mt-container-wrap">
-	<?php mellany_title(); ?>
+	<?php rimi_title(); ?>
 	<div class="container mt-content-container">
 		<div class="row">
 			<div class="col-md-8  floatleft">

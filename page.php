@@ -7,7 +7,7 @@
 get_header(); ?>
 <div class="mt-container-wrap">
 
-	<?php mellany_title(); ?>
+	<?php rimi_title(); ?>
 	<div class="container mt-content-container">
 
 	<?php /* Sidebar Meta from Magazin framework */

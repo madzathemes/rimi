@@ -1,15 +1,15 @@
 <?php
 
-function mellany_sidebar_widget_init() {
+function rimi_sidebar_widget_init() {
 
-$mt_columns = get_option("mellany_theme_options");
+$mt_columns = get_option("rimi_theme_options");
 
 /* --------------------------------------------------------------------------------------- Page Widget Area 1 */
 
 	register_sidebar( array(
-		'name' => esc_html__( 'Default Sidebar', 'mellany'),
+		'name' => esc_html__( 'Default Sidebar', 'rimi'),
 		'id' => 'sidebar-widget-area-1',
-		'description' => esc_html__( 'The page sidebar widget area 1', 'mellany' ),
+		'description' => esc_html__( 'The page sidebar widget area 1', 'rimi' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
 				'before_title' => '<h2 class="heading"><span>',
@@ -20,9 +20,9 @@ $mt_columns = get_option("mellany_theme_options");
 /* --------------------------------------------------------------------------------------- Blog Widget Area */
 
 	register_sidebar( array(
-		'name' => esc_html__( 'Blog/Category Sidebar', 'mellany'),
+		'name' => esc_html__( 'Blog/Category Sidebar', 'rimi'),
 		'id' => 'sidebar-blog-widget-area',
-		'description' => esc_html__( 'The blog sidebar widget area' , 'mellany'),
+		'description' => esc_html__( 'The blog sidebar widget area' , 'rimi'),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
 				'before_title' => '<h2 class="heading"><span>',
@@ -35,9 +35,9 @@ $mt_columns = get_option("mellany_theme_options");
 
 if(function_exists( 'is_woocommerce' ) ) {
 	register_sidebar( array(
-		'name' => esc_html__( 'WooCommerce Sidebar', 'mellany'),
+		'name' => esc_html__( 'WooCommerce Sidebar', 'rimi'),
 		'id' => 'sidebar-woocommerce-widget-area',
-		'description' => esc_html__( 'WooCommerce sidebar area', 'mellany' ),
+		'description' => esc_html__( 'WooCommerce sidebar area', 'rimi' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
 				'before_title' => '<h2 class="heading"><span>',
@@ -49,9 +49,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 
 if(function_exists( 'is_woocommerce' ) ) {
 	register_sidebar( array(
-		'name' => esc_html__( 'WooCommerce Single Sidebar', 'mellany'),
+		'name' => esc_html__( 'WooCommerce Single Sidebar', 'rimi'),
 		'id' => 'sidebar-woocommerce-single-widget-area',
-		'description' => esc_html__( 'WooCommerce Single sidebar area', 'mellany' ),
+		'description' => esc_html__( 'WooCommerce Single sidebar area', 'rimi' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
 				'before_title' => '<h2 class="heading"><span>',
@@ -62,9 +62,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 /* --------------------------------------------------------------------------------------- Single Widget Area */
 
 	register_sidebar( array(
-		'name' => esc_html__( 'Post Sidebar', 'mellany'),
+		'name' => esc_html__( 'Post Sidebar', 'rimi'),
 		'id' => 'sidebar-single-widget-area',
-		'description' => esc_html__( 'The single page sidebar widget area' , 'mellany'),
+		'description' => esc_html__( 'The single page sidebar widget area' , 'rimi'),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
 				'before_title' => '<h2 class="heading"><span>',
@@ -73,9 +73,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 	/* --------------------------------------------------------------------------------------- Single Buttom Widget Area */
 
 		register_sidebar( array(
-			'name' => esc_html__( 'Post Bottom (Before Comments)', 'mellany'),
+			'name' => esc_html__( 'Post Bottom (Before Comments)', 'rimi'),
 			'id' => 'sidebar-single-bottom-widget-area-before',
-			'description' => esc_html__( 'The post bottom widget area' , 'mellany'),
+			'description' => esc_html__( 'The post bottom widget area' , 'rimi'),
 			'before_widget' => '<div class="widget">',
 			'after_widget' => '<div class="clear"></div></div>',
 					'before_title' => '<h2 class="heading"><span>',
@@ -85,9 +85,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 	/* --------------------------------------------------------------------------------------- Single Buttom Widget Area */
 
 			register_sidebar( array(
-				'name' => esc_html__( 'Post Bottom (After Comments)', 'mellany'),
+				'name' => esc_html__( 'Post Bottom (After Comments)', 'rimi'),
 				'id' => 'sidebar-single-bottom-widget-area-after',
-				'description' => esc_html__( 'The post bottom widget area' , 'mellany'),
+				'description' => esc_html__( 'The post bottom widget area' , 'rimi'),
 				'before_widget' => '<div class="widget">',
 				'after_widget' => '<div class="clear"></div></div>',
 						'before_title' => '<h2 class="heading"><span>',
@@ -99,9 +99,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 
 
 	register_sidebar( array(
-		'name' => esc_html__( 'Search Page Sidebar', 'mellany'),
+		'name' => esc_html__( 'Search Page Sidebar', 'rimi'),
 		'id' => 'sidebar-search-widget-area',
-		'description' => esc_html__( 'The search page sidebar widget area' , 'mellany'),
+		'description' => esc_html__( 'The search page sidebar widget area' , 'rimi'),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
 				'before_title' => '<h2 class="heading"><span>',
@@ -112,9 +112,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 
 
 		register_sidebar( array(
-			'name' => esc_html__( 'Menu Column 1', 'mellany'),
+			'name' => esc_html__( 'Menu Column 1', 'rimi'),
 			'id' => 'menu-column-1',
-			'description' => esc_html__( 'Add menu widgets inside small menu columns' , 'mellany'),
+			'description' => esc_html__( 'Add menu widgets inside small menu columns' , 'rimi'),
 			'before_widget' => '<div class="hover-menu-widget">',
 			'after_widget' => '<div class="clear"></div></div>',
 					'before_title' => '<span class="hover-menu-head">',
@@ -122,9 +122,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name' => esc_html__( 'Menu Column 2', 'mellany'),
+			'name' => esc_html__( 'Menu Column 2', 'rimi'),
 			'id' => 'menu-column-2',
-			'description' => esc_html__( 'Add menu widgets inside small menu columns' , 'mellany'),
+			'description' => esc_html__( 'Add menu widgets inside small menu columns' , 'rimi'),
 			'before_widget' => '<div class="hover-menu-widget">',
 			'after_widget' => '<div class="clear"></div></div>',
 					'before_title' => '<span class="hover-menu-head">',
@@ -132,9 +132,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name' => esc_html__( 'Menu Column 3', 'mellany'),
+			'name' => esc_html__( 'Menu Column 3', 'rimi'),
 			'id' => 'menu-column-3',
-			'description' => esc_html__( 'Add menu widgets inside small menu columns' , 'mellany'),
+			'description' => esc_html__( 'Add menu widgets inside small menu columns' , 'rimi'),
 			'before_widget' => '<div class="hover-menu-widget">',
 			'after_widget' => '<div class="clear"></div></div>',
 					'before_title' => '<span class="hover-menu-head">',
@@ -142,9 +142,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 		) );
 
 		register_sidebar( array(
-		'name' => esc_html__( 'Author Page Sidebar', 'mellany'),
+		'name' => esc_html__( 'Author Page Sidebar', 'rimi'),
 		'id' => 'sidebar-author-widget-area',
-		'description' => esc_html__( 'The Author page sidebar widget area' , 'mellany'),
+		'description' => esc_html__( 'The Author page sidebar widget area' , 'rimi'),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '<div class="clear"></div></div>',
 				'before_title' => '<h2 class="heading"><span>',
@@ -155,9 +155,9 @@ if(function_exists( 'is_woocommerce' ) ) {
 	/* --------------------------------------------------------------------------------------- Mobile Menu Widgets */
 
 		register_sidebar( array(
-			'name' => esc_html__( 'Mobile Menu Widgets', 'mellany'),
+			'name' => esc_html__( 'Mobile Menu Widgets', 'rimi'),
 			'id' => 'mobile-menu-widget-area',
-			'description' => esc_html__( 'The Mobile Menu Widget area' , 'mellany'),
+			'description' => esc_html__( 'The Mobile Menu Widget area' , 'rimi'),
 			'before_widget' => '<div class="widget">',
 			'after_widget' => '<div class="clear"></div></div>',
 					'before_title' => '<h2 class="heading"><span>',
@@ -169,5 +169,5 @@ if(function_exists( 'is_woocommerce' ) ) {
 
 }
 
-add_action( 'widgets_init', 'mellany_sidebar_widget_init' );
+add_action( 'widgets_init', 'rimi_sidebar_widget_init' );
 ?>

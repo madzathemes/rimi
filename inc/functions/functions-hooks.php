@@ -1,11 +1,11 @@
 <?php
 
-function mellany_css() {
+function rimi_css() {
 
-	wp_enqueue_style('mellany-style', get_stylesheet_uri());
+	wp_enqueue_style('rimi-style', get_stylesheet_uri());
 
 	$custom_styles = '';
-	$options = get_option("mellany_theme_options");
+	$options = get_option("rimi_theme_options");
 
 	// Default Color
 	if(!empty($options['colors_default'])){
@@ -312,20 +312,20 @@ function mellany_css() {
 
 	 if ( $custom_styles != '' ) {
 	  $css = preg_replace("/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/", "\n", $custom_styles);
-		wp_add_inline_style( 'mellany-style', $css );
+		wp_add_inline_style( 'rimi-style', $css );
 	}
 
 }
-add_action( 'wp_enqueue_scripts', 'mellany_css');
+add_action( 'wp_enqueue_scripts', 'rimi_css');
 
-function mellany_header_script() {
+function rimi_header_script() {
 
-		wp_enqueue_style('mellany-style', get_stylesheet_uri());
+		wp_enqueue_style('rimi-style', get_stylesheet_uri());
 
-		$option = get_option("mellany_theme_options");
+		$option = get_option("rimi_theme_options");
 
-		wp_enqueue_script( 'mellany_script', get_template_directory_uri(). '/inc/js/scripts.js', array( 'jquery'), '', true );
-		wp_localize_script( 'mellany_script', 'ajax_posts', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'noposts' => esc_html__('No older posts found', 'mellany'), ));
+		wp_enqueue_script( 'rimi_script', get_template_directory_uri(). '/inc/js/scripts.js', array( 'jquery'), '', true );
+		wp_localize_script( 'rimi_script', 'ajax_posts', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'noposts' => esc_html__('No older posts found', 'rimi'), ));
 
 		// Third party scripts/styles don't need to be prefixed to avoid double loading
 		wp_enqueue_script('html5shiv', get_template_directory_uri() . '/inc/js/html5shiv.js', array('jquery'), '1.0', true);
@@ -333,7 +333,7 @@ function mellany_header_script() {
 		wp_enqueue_script('respondmin', get_template_directory_uri() . '/inc/js/respond.js', array('jquery'), '1.0', true);
 		wp_script_add_data( 'respondmin', 'conditional', 'lt IE 9' );
 
-    function mellany_fonts_url() {
+    function rimi_fonts_url() {
 
       $theme_font = "Lato:400,900,700";
 
@@ -341,13 +341,13 @@ function mellany_header_script() {
         Translators: If there are characters in your language that are not supported
         by chosen font(s), translate this to 'off'. Do not translate into your own language.
          */
-        if ( 'off' !== _x( 'on', 'Google font: on or off', 'mellany' ) ) {
+        if ( 'off' !== _x( 'on', 'Google font: on or off', 'rimi' ) ) {
             $font_url = add_query_arg( 'family', urlencode( ''. esc_attr($theme_font) .'' ), "//fonts.googleapis.com/css" );
         }
         return $font_url;
     }
 
-    wp_enqueue_style( 'mellany-fonts', mellany_fonts_url(), array(), '1.0.0' );
+    wp_enqueue_style( 'rimi-fonts', rimi_fonts_url(), array(), '1.0.0' );
 		$time = "";
 		if (!empty($option['menu_top_ad'])) {
 			 if  ($option['menu_top_ad']!="ad") {
@@ -356,23 +356,23 @@ function mellany_header_script() {
 		} else {
 			$time = "ture";
 		}
-		if(!empty($option['header_time']) and $time == "ture") { if($option['header_time']=="on") { wp_add_inline_script( 'mellany-fonts', 'window.onload=startTime;', 'before' ); }}
+		if(!empty($option['header_time']) and $time == "ture") { if($option['header_time']=="on") { wp_add_inline_script( 'rimi-fonts', 'window.onload=startTime;', 'before' ); }}
 
 }
-add_action('wp_enqueue_scripts', 'mellany_header_script');
+add_action('wp_enqueue_scripts', 'rimi_header_script');
 
-function mellany_admin_script() {
-	wp_enqueue_style('mellany-admin', get_template_directory_uri().'/inc/css/admin.css');
+function rimi_admin_script() {
+	wp_enqueue_style('rimi-admin', get_template_directory_uri().'/inc/css/admin.css');
 }
-add_action('admin_enqueue_scripts', 'mellany_admin_script');
+add_action('admin_enqueue_scripts', 'rimi_admin_script');
 
 
-add_filter('body_class','mellany_class');
-function mellany_class($classes) {
+add_filter('body_class','rimi_class');
+function rimi_class($classes) {
 
 	$body_class = "";
 
-	$options = get_option("mellany_theme_options");
+	$options = get_option("rimi_theme_options");
 
 	if(!empty( $options['mt_menu_fix'])){
 		if( $options['mt_menu_fix']=="1") {

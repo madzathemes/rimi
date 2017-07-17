@@ -5,9 +5,9 @@ $tag_title = single_tag_title("", false);
 $tag_obj = get_query_var('tag_id');
 $tag_array = get_tag($tag_obj);
 $tag_slug = $tag_array->slug;
-if ( false == get_theme_mod( 't_p_tag', false ) ) { $t_p_tag = esc_html__("Tag", "mellany");  } else { $t_p_tag = get_theme_mod( 't_p_tag' ); }
-if ( false == get_theme_mod( 't_p_nothing_found', false ) ) { $t_p_nothing_found = esc_html__("Nothing Found", "mellany");  } else { $t_p_nothing_found = get_theme_mod( 't_p_nothing_found' ); }
-if ( false == get_theme_mod( 't_p_apologies', false ) ) { $t_p_apologies = esc_html__("Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.", "mellany");  } else { $t_p_apologies = get_theme_mod( 't_p_apologies' ); }
+if ( false == get_theme_mod( 't_p_tag', false ) ) { $t_p_tag = esc_html__("Tag", "rimi");  } else { $t_p_tag = get_theme_mod( 't_p_tag' ); }
+if ( false == get_theme_mod( 't_p_nothing_found', false ) ) { $t_p_nothing_found = esc_html__("Nothing Found", "rimi");  } else { $t_p_nothing_found = get_theme_mod( 't_p_nothing_found' ); }
+if ( false == get_theme_mod( 't_p_apologies', false ) ) { $t_p_apologies = esc_html__("Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.", "rimi");  } else { $t_p_apologies = get_theme_mod( 't_p_apologies' ); }
 
 
 $option = get_option("magazin_theme_options");
