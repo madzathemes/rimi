@@ -845,7 +845,6 @@ div.sf-menu > ul > li > a::before {
   padding: 0px 2px;
   left: 0px;
   position: absolute;
-  border: 1px solid #7a7c86;
   z-index: -1;
 }
 .sf-menu > li.current_page_item > a::before, div.sf-menu > ul > li.current_page_item > a::before,
@@ -939,7 +938,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   text-align: center;
 }
 .head-nav a {
-  color: #252b42;
+  color: #939292;
   font-weight:900;
   font-size: 13px;
   margin: 0px 10px 0px 30px;
@@ -965,7 +964,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 .head-social ul li a {
   display: inline-block;
   padding: 5px;
-  color: #252b42;
+  color: #939292;
   font-size: 14px;
 }
 
@@ -979,20 +978,16 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   margin-left: -20px;
   font-size: 14px;
   margin-top: 0px;
-  color: #a5ce27;
   font-weight: normal;
 }
 .mt_l_hot:before {
   content: "\e9a9";
-  color: #f44336;
 }
 .mt_l_popular:before {
   content: "\e9d9";
-  color: #ffc600;
 }
 .mt_l_latest:before {
   content: "\74";
-  color: #7a7c86;
 }
 
 /* HEAD TIME */
@@ -1031,7 +1026,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 
 /* HEAD MENU GLOBAL */
 .menu-background {
-  background: #7a7c86;
+  background: #e1631a;
 }
 .top-nav {
   color: white;
@@ -1288,7 +1283,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   padding: 13px 20px;
   height: 46px;
   border-left: 10px solid white;
-  background: #4a7aba;
+  background: #9a7fa9;
   display: inline-block;
 }
 .nav-url a:hover {
