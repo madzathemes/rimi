@@ -166,7 +166,7 @@ function rimi_logo() {
 		</a>
 	<?php } else { ?>
 		<a class="logo"  href="<?php echo esc_url(home_url('/'));?>">
-			<img src="<?php echo get_template_directory_uri(); ?>/inc/img/logo.png" width="186" height="45" alt="<?php echo the_title(); ?>" />
+			<img src="<?php echo get_template_directory_uri(); ?>/inc/img/logo.png" width="170" height="52" alt="<?php echo the_title(); ?>" />
 		</a>
 	<?php }
 }
