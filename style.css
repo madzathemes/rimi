@@ -1874,6 +1874,12 @@ h2.heading span {
   position: absolute;
   bottom: 0;
 }
+.boxed-layout-on .poster-next {
+  left: 0px
+}
+.boxed-layout-on .poster-next {
+  left: 0px
+}
 .poster-next:before {
   content: "\62";
 }
@@ -3124,7 +3130,7 @@ blockquote {
     width: 1130px;
   }
   .boxed-layout-on .post-carousel {
-    padding-left: 0px;
+    padding-left: 50px;
   }
   .boxed-layout-on .poster-prev {
     left: 0px;
