@@ -39,10 +39,10 @@
 
     <?php  if ( has_post_thumbnail() ) { ?>
 			<div class="post-img">
-        <a class="lightbox" href="<?php echo get_the_post_thumbnail_url(get_the_ID(),"full"); ?>">
+        <?php if ( shortcode_exists( 'posts_trending' ) ) { ?><a class="lightbox" href="<?php echo get_the_post_thumbnail_url(get_the_ID(),"large"); ?>"><?php } ?>
           <?php $copyright = get_post_meta(get_the_ID(), "magazin_img_copyright", true); if(!empty($copyright)){ ?><span class="mt-img-copyright"><?php echo esc_attr($copyright); ?></span><?php } ?>
 				<?php echo get_the_post_thumbnail(get_the_ID(),"large"); ?>
-        </a>
+        <?php if ( shortcode_exists( 'posts_trending' ) ) { ?></a><?php } ?>
 			</div>
 		<?php } ?>
 
