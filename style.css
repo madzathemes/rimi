@@ -2606,9 +2606,9 @@ background-color: rgba(0,0,0,.6);
 .single-media-title .author-info a {
   color: white !important;
 }
-body,
-.boxed-layout-on {
-    overflow-x: hidden;
+.boxed-layout-on .mt-content-container .row .col-md-12 > div,
+.boxed-layout-on .footer-wrap .container > div {
+    overflow: hidden;
 }
 .single .author-info strong {
   font-size: 13px;
