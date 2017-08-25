@@ -2607,7 +2607,7 @@ background-color: rgba(0,0,0,.6);
   color: white !important;
 }
 .boxed-layout-on {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .single .author-info strong {
   font-size: 13px;
