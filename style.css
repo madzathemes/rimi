@@ -2606,7 +2606,7 @@ background-color: rgba(0,0,0,.6);
 .single-media-title .author-info a {
   color: white !important;
 }
-.boxed-layout-on .mt-content-container,
+.boxed-layout-on .mt-container-wrap,
 .boxed-layout-on .footer-wrap {
     overflow: hidden;
 }
