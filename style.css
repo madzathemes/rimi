@@ -1877,9 +1877,6 @@ h2.heading span {
 .boxed-layout-on .poster-next {
   left: 0px
 }
-.boxed-layout-on .poster-next {
-  left: 0px
-}
 .poster-next:before {
   content: "\62";
 }
@@ -3139,7 +3136,9 @@ blockquote {
   .poster.size-350.normal .poster-image {
     width: 240px;
   }
-
+  .boxed-layout-on .poster-next {
+    left: 10px
+  }
   .grid-post {
     width: 460px;
     height: 460px;
