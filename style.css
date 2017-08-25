@@ -3139,6 +3139,10 @@ blockquote {
 
 @media all and (max-width: 1199px) {
 
+  .poster.size-350.normal .poster-image {
+    width: 240px;
+  }
+
   .grid-post {
     width: 460px;
     height: 460px;
