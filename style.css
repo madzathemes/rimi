@@ -2606,6 +2606,7 @@ background-color: rgba(0,0,0,.6);
 .single-media-title .author-info a {
   color: white !important;
 }
+body,
 .boxed-layout-on {
     overflow-x: hidden;
 }
