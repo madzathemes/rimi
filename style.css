@@ -2944,9 +2944,6 @@ blockquote {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.boxed-layout-on .mt-content-container .row .col-md-12 > div {
-  overflow: hidden;
-}
 .page .mt-content-container {
   padding-top: 0px;
 }
