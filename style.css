@@ -3344,9 +3344,6 @@ blockquote {
   .mt_comment_i_1 {
     padding-right: 20px;
   }
-  .panel-grid-cell {
-    width: 100% !important;
-  }
   .post-gallery-nav .slick-arrow {
     display: none!important;
   }
