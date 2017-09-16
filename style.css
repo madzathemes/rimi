@@ -1432,7 +1432,7 @@ h2.heading span {
 .social-text {
   float: right;
 }
-.social-facebook abbr { color: #2d5f9a; }
+.social-facebook a { color: #2d5f9a; }
 .social-facebook:before { content: "\77"; }
 .social-twitter a { color: #2ecff8; }
 .social-twitter:before { content: "\6c"; }
