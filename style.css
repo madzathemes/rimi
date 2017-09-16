@@ -1287,7 +1287,8 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   display: inline-block;
 }
 .nav-url a:hover {
-  background: #416ba5;
+  background: #ecedf1;
+  color: #7a7b86
 }
 
 /* HEAD SEARCH */
