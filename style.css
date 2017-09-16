@@ -4299,7 +4299,7 @@ img.mfp-img {
   cursor: pointer;
   margin-left: 35px;
   font-size: 13px;
-  color: #9799a0;
+  color: #7a7b86;
   font-weight: 400;
 }
 .mt-tabc:before {
@@ -4317,7 +4317,7 @@ img.mfp-img {
 }
 .mt-tabc:hover,
 .mt-tabc.active {
-  color: #222;
+  color: #ff6226;
 }
 .mt-tabc:after {
   font-family: "madza";
