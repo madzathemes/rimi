@@ -1451,9 +1451,9 @@ h2.heading span {
 	background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
 }
 .social-instagram:before { content: "\6d"; }
-.social-linkedin { color: #0077B5; }
+.social-linkedin a { color: #0077B5; }
 .social-linkedin:before { content: "\71"; }
-.social-pinterest { color: #cb2027; }
+.social-pinterest a { color: #cb2027; }
 .social-pinterest:before { content: "\70"; }
 .social-soundcloud { color: #f50; }
 .social-soundcloud:before { content: "\e912"; }
