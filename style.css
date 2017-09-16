@@ -1762,13 +1762,14 @@ h2.heading span {
 .poster-large-cat {
   margin-top: 20px;
   padding-left: 20px;
+  margin-bottom: 30px;
 }
 .poster-large-cat span {
   position: relative;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
-  color: #6b8db9;
+  color: #ff6226;
 }
 .poster-large-content h2 {
   font-size: 32px;
