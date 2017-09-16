@@ -1432,6 +1432,7 @@ h2.heading span {
 }
 .social-text {
   float: right;
+  font-size: 15px;
 }
 .social-facebook { background: #2d5f9a; }
 .social-facebook:before { content: "\77"; }
@@ -1488,7 +1489,7 @@ h2.heading span {
 }
 .social-count {
   font-weight: 900;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1;
   position: absolute;
   padding-top: 4px;
