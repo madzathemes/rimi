@@ -1037,7 +1037,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   color: white;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* HEAD SMALL NAV */
@@ -1280,8 +1280,8 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 
 /* HEAD URL */
 .nav-url a {
-  padding: 13px 20px;
-  height: 46px;
+  padding: 14px 20px;
+  height: 47px;
   border-left: 10px solid white;
   background: #7a7b86;
   display: inline-block;
