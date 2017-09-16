@@ -503,7 +503,7 @@ a {
   color: #111;
 }
 a:hover{
-  color: #6b8db9;
+  color: #ff6226;
 }
 a[href^=tel]{
      color:inherit;
@@ -2098,7 +2098,7 @@ h2.heading span {
 }
 .nav-links a:hover {
   color: white;
-  background: #ff6226;
+  background: #6b8db9;
 }
 .post-style-8 .single-media-top {
 -webkit-box-shadow: inset 0 0 190px 0 #000;
