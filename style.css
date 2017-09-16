@@ -1590,12 +1590,12 @@ h2.heading span {
 }
 .poster-cat span {
   display: inline-block;
-  background: rgba(0, 0, 0, 0.33);
-  padding: 4px 9px 4px;
+  background: #fff;
+  padding: 9px 11px 4px 9px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-  color: white;
+  color: #7a7c86;
 }
 .poster-data {
   display: inline-block;
