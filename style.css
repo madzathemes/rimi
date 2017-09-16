@@ -1045,7 +1045,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   line-height: 46px;
   padding: 0px 12px;
   width: 46px;
-  height: 46px;
+  height: 47px;
 }
 .nav-button:hover,
 .nav-button:hover::before,
@@ -1295,7 +1295,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 .nav-search {
   padding: 0px 15px 0px 15px;
   width: 46px;
-  height: 46px;
+  height: 47px;
 }
 .nav-search::before {
   content: "";
