@@ -2988,9 +2988,11 @@ blockquote {
 
 /* FOOTER */
 .footer {
-  background: #3a3c46;
   z-index: 9999;
   position: relative;
+}
+.footer-top {
+  background: #3a3c46;
 }
 .footer-top .container {
   position: relative;
@@ -3008,8 +3010,7 @@ blockquote {
   padding: 40px 0px 10px;
 }
 .footer-bottom {
-  background: #7a7c86;
-color: white!important
+  color: white!important
 }
 .footer-bottom p{
   color: #3a3c46;
