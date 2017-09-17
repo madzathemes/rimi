@@ -671,7 +671,7 @@ table {
 .post-style-6 .post-media-wrap,
 .post-style-4 .post-media-wrap,
 .header-wrap,
-.footer-wrap .footer-page,
+.footer-wrap,
 .mt-container-wrap,
 .single-top,
 .post-media-wrap {
@@ -2988,6 +2988,7 @@ blockquote {
 
 /* FOOTER */
 .footer {
+  background: #3a3c46;
   z-index: 9999;
   position: relative;
 }
@@ -3013,7 +3014,7 @@ blockquote {
   color: white!important
 }
 .footer-bottom p{
-  color: #3a3c46;
+  color: #90939e;
   font-size: 13px;
   line-height: 1;
   display: inline-block;
@@ -3030,7 +3031,7 @@ blockquote {
   padding: 15px 0px 20px 20px;
 }
 .footer-bottom a {
-  color: #3a3c46;
+  color: #90939e;
   font-size: 13px;
 }
 .footer-bottom a:hover {
