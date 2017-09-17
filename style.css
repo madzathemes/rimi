@@ -2975,7 +2975,7 @@ blockquote {
 
 /* FOOTER */
 .footer {
-  background: #000;
+  background: #3a3c46;
   z-index: 9999;
   position: relative;
 }
@@ -2983,7 +2983,7 @@ blockquote {
   position: relative;
 }
 .footer-top p{
-  color: #aeaeae;
+  color: #90939e;
   font-size: 14px;
   display: inline-block;
 }
@@ -2995,10 +2995,11 @@ blockquote {
   padding: 40px 0px 10px;
 }
 .footer-bottom {
-  border-top: 1px solid #222;
+  background: #7a7c86;
+color: white!important
 }
 .footer-bottom p{
-  color: #aeaeae;
+  color: #3a3c46;
   font-size: 13px;
   line-height: 1;
   display: inline-block;
@@ -3015,7 +3016,7 @@ blockquote {
   padding: 15px 0px 20px 20px;
 }
 .footer-bottom a {
-  color: #aeaeae;
+  color: #3a3c46;
   font-size: 13px;
 }
 .footer-bottom a:hover {
