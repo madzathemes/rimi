@@ -2747,10 +2747,12 @@ background-color: rgba(0,0,0,.6);
     padding: 0px;
 }
 blockquote {
-    font-size: 21px !important;
-    font-weight: 800;
-    margin: 20px 40px;
-    position: relative;
+  font-size: 21px !important;
+  font-weight: 800;
+  margin: 20px 0px 40px;
+  position: relative;
+  padding: 0 0 0 20px;
+  border-left: 5px solid #40424c;
 }
 .page-template-default #coment-line-space {
   margin-top:20px;
