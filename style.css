@@ -544,8 +544,12 @@ iframe {
   max-width: 100%;
 }
 .entry-content blockquote {
-    font-size: 24px;
-    font-weight: 900;
+  font-size: 21px !important;
+  font-weight: 800;
+  margin: 20px 0px 40px;
+  position: relative;
+  padding: 0 0 0 20px;
+  border-left: 5px solid #40424c;
 }
 .wp-caption {
   padding: 0px;
