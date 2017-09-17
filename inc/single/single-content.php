@@ -26,16 +26,6 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
   wp_link_pages( $defaults ); ?>
 </div>
   <div class="tags"><?php echo get_the_tag_list(); ?></div>
-  <ul class="share down">
-    <li class="share-facebook"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>" target="_blank"><span><?php echo esc_html__('Share Post', 'rimi'); ?></span></a></li>
-    <?php $input = get_the_title().' '.get_the_permalink(); $title = str_replace( ' ', '+', $input ); ?>
-    <li class="share-twitter"><a href="http://twitter.com/home/?status=<?php echo esc_attr($title); ?>" target="_blank"><span><?php echo esc_html__('Share on Twitter', 'rimi'); ?></span></a></li>
-    <li class="share-more">
-      <a href="https://plus.google.com/share?url=<?php the_permalink() ?>" target="_blank"><div class="google"></div></a>
-      <a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink() ?>&media=<?php echo esc_url($url); ?>" target="_blank"><div class="pinterest"></div></a>
-      <div class="share-more-wrap"><div class="share-more-icon">+</div></div>
-    </li>
-  </ul>
   <div class="clearfix"></div>
   <div class="entry-meta">
 
