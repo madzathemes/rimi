@@ -4492,3 +4492,11 @@ img.mfp-img {
   float: left;
   font-weight: 900;
 }
+
+.background-ad {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
