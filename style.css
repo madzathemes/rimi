@@ -551,6 +551,13 @@ iframe {
   padding: 0 0 0 20px;
   border-left: 5px solid #40424c;
 }
+blockquote p {
+  font-size: 21px !important;
+  font-weight: 900;
+  line-height: 1.4;
+  color: #40424c !important;
+  padding-bottom: 0px;
+}
 .wp-caption {
   padding: 0px;
   background: #f5f5f5;
