@@ -54,7 +54,6 @@
 									<p><?php echo html_entity_decode(get_theme_mod('rimi_footer_follow_us', 'Donec eu tellus convallis, vehicula neque sed')); ?></p>
 								</div>
 							</div>
-							<a href="#" class="footer-scroll-to-top-link"></a>
 						</div>
 					</div>
 				<?php } ?>
