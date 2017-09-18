@@ -2576,7 +2576,6 @@ background-color: rgba(0,0,0,.6);
 }
 .entry-meta .author-info {
   background: #f9f9f9 !important;
-  border-left: 1px solid #dedede !important;
 }
 .single-media-title .mt-author-soc a:before   {
   color: white;
