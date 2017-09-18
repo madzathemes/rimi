@@ -2896,10 +2896,9 @@ blockquote {
 .comment-reply-link {
   right: 0px;
   bottom: 0px;
-  background: whitesmoke;
-  padding: 5px 5px 3px 10px;
-  color: #222;
-  font-size: 12px;
+  padding: 5px 0px 3px 10px;
+  color: #7c7d88;
+  font-size: 11px;
   text-transform: uppercase;
   position: absolute;
 }
