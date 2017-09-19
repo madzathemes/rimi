@@ -3259,7 +3259,8 @@ blockquote {
     -ms-transform: scale3d(.8,.8,.8)!important;
   }
 
-  .top-ad {
+  .top-ad,
+  .head-nav {
     display: none!important;
   }
 
