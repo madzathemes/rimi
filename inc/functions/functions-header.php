@@ -98,7 +98,7 @@ if(!empty($option['mobile_header_type'])) {
 								</div>
 						<?php } ?>
 
-						<?php if ( true == get_theme_mod( 'mt_menu_search', true ) ) { ?>
+						<?php  ?>
 							<div class="search-close"></div>
 							<div class="nav-search-wrap pull-right menu-background-right mt-radius">
 								<div class="nav-search pointer"></div>
@@ -108,7 +108,7 @@ if(!empty($option['mobile_header_type'])) {
 									</form>
 								</div>
 							</div>
-						<?php } ?>
+						<?php  ?>
 
 					</div>
 				</div>
