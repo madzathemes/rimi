@@ -3857,6 +3857,7 @@ ul.page-numbers li {
 }
 .mt-smart-menu .menu-item-has-children {
   position: relative;
+  max-width: 280px;
 }
 .mt-smart-menu .menu-item-has-children span {
   width: 100%;
