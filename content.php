@@ -64,5 +64,5 @@ if(is_single()) { $more = 1; }?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rimi' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php } ?>
-
+<div class="clear"></div>
 </article><!-- #post -->
