@@ -533,7 +533,7 @@ function rimi_customize_header($wp_customize){
        'settings'    => 'mt_menu_search',
        'label'       => esc_attr__( 'Search Button', 'rimi' ),
        'section'     => 'rimi_header_top',
-       'default'     => 'on',
+       'default'     => 'off',
        'priority'    => 10,
        'choices'     => array(
          'on'  => esc_attr__( 'On', 'rimi' ),
