@@ -3368,8 +3368,10 @@ blockquote {
     text-align: left;
   }
   h2.heading.heading-left,
-  h2.heading.heading-right {
+  h2.heading.heading-right,
+  .mt-post-tabs-nav {
     text-align: center !important;
+    float: none !important
   }
   h2.heading.heading-left span,
   h2.heading.heading-right span {
