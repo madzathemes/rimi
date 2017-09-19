@@ -2780,7 +2780,9 @@ background-color: rgba(0,0,0,.6);
 }
 .entry-content:after {
   clear: both;
-  content: ""
+  content: "";
+  display: table;
+  table-layout: fixed;
 }
 .entry-content ul,
 .entry-content ol{
@@ -4585,7 +4587,4 @@ img.mfp-img {
   position: fixed;
   left: 0;
   top: 0;
-}
-.header-wrap   {
-  margin-top: 115px;
 }
