@@ -3661,7 +3661,8 @@ blockquote {
   }
 }
 @media all and (max-width: 400px) {
-  .poster-large-content p {
+  .poster-large-content p,
+  .poster-large-link {
     display: none;
   }
   .post-statistic .stat-shares {
