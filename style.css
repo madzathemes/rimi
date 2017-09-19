@@ -1401,6 +1401,9 @@ h2.heading,
   padding-top: 0px;
   color: #7a7b86;
 }
+.pagination > h2 {
+  text-align: left;
+}
 h2.heading.heading-left {
   text-align: left;
 }
