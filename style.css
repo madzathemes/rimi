@@ -3260,7 +3260,8 @@ blockquote {
   }
 
   .top-ad,
-  .head-social {
+  .head-social,
+  .head-nav a span {
     display: none!important;
   }
 
