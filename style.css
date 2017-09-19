@@ -3357,9 +3357,7 @@ blockquote {
   .column-second {
     float: none;
   }
-  .size-350.poster {
-    text-align: center;
-  }
+
   .poster.video .poster-data {
     display: block;
   }
@@ -3469,6 +3467,9 @@ blockquote {
   .grid-post.style-1.nr-3 h2,
   .grid-post.style-1.nr-4 h2 {
     font-size: 21px !important;
+  }
+  .size-350.poster {
+    text-align: center;
   }
 }
 
