@@ -3367,17 +3367,7 @@ blockquote {
   .poster-info {
     text-align: left;
   }
-  h2.heading.heading-left,
-  h2.heading.heading-right,
-  .mt-post-tabs-nav {
-    text-align: center !important;
-    float: none !important
-  }
-  .mt-tabc {
-    float: none !important;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
+
   h2.heading.heading-left span,
   h2.heading.heading-right span {
     padding: 0px 20px;
