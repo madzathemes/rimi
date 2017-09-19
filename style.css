@@ -3248,7 +3248,8 @@ blockquote {
 }
 
 @media all and (max-width: 991px) {
-  .background-ad {
+  .background-ad,
+  .social-text {
     display: none;
   }
   .poster h2 {
@@ -3478,6 +3479,9 @@ blockquote {
   .mt-post-tabs-nav {
     text-align: center !important;
     float: none !important
+  }
+  .social-text {
+    display: inline-block;
   }
   .mt-tabc {
     float: none !important;
