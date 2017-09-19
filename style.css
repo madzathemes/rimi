@@ -2544,7 +2544,7 @@ background-color: rgba(0,0,0,.6);
   -moz-osx-font-smoothing: grayscale;
 }
 .mt-author-soc {
-  margin: -6px 0px;
+  margin: -6px 0px 0px 5px;
   display: inline-block;
 }
 .mt-author-soc a:before {
