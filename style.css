@@ -3244,6 +3244,9 @@ blockquote {
   .background-ad {
     display: none;
   }
+  .header-wrap {
+    margin-top: 0px !important;
+  }
   .shadow-wrap .mt-outer-wrap {
     -webkit-box-shadow: 0 0 100px #8c8c8c;
     -moz-box-shadow: 0 0 100px #8c8c8c;
