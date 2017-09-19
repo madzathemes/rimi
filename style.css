@@ -3479,6 +3479,9 @@ blockquote {
   .size-350.poster {
     text-align: center;
   }
+  .poster.size-350.normal .poster-image {
+    width: 100%;
+  }
   .post-style-7 .single-media,
   .post-style-7 .single-media-wrap {
     height: 350px;
