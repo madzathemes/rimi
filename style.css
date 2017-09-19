@@ -3539,7 +3539,9 @@ blockquote {
   }
 }
 @media all and (max-width: 545px) {
-
+  .post-style-6 .single-media-top {
+    height: 300px;
+  }
   ul.children {
     padding-left: 10px;
   }
