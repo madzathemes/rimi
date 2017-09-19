@@ -3248,6 +3248,12 @@ blockquote {
 }
 
 @media all and (max-width: 991px) {
+  .poster-small h4 {
+    font-size: 13px;
+  }
+  .poster-small .poster-text {
+    padding-top: 0px;
+  }
   .background-ad,
   .social-text {
     display: none;
