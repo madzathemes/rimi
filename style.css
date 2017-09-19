@@ -3373,6 +3373,10 @@ blockquote {
     text-align: center !important;
     float: none !important
   }
+  .mt-tabc {
+    float: none;
+    display: inline-block;
+  }
   h2.heading.heading-left span,
   h2.heading.heading-right span {
     padding: 0px 20px;
