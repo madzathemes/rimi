@@ -3470,14 +3470,14 @@ blockquote {
   .size-350.poster {
     text-align: center;
   }
+
+}
+
+@media all and (max-width: 715px) {
   .size-350 .poster-image {
     float: none !important;
     margin-right: 0px !important;
 }
-}
-
-@media all and (max-width: 715px) {
-
   .post-style-7 .single-media,
   .post-style-7 .single-media-wrap {
     height: 350px;
