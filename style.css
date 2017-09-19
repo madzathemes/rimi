@@ -2545,6 +2545,7 @@ background-color: rgba(0,0,0,.6);
 }
 .mt-author-soc {
   margin: -6px 0px;
+  display: inline-block;
 }
 .mt-author-soc a:before {
   font-size: 12px;
@@ -2641,7 +2642,6 @@ background-color: rgba(0,0,0,.6);
 .single .author-info strong {
   font-size: 13px;
   margin-top: 6px;
-  display: block;
 }
 .stat-shares {
   padding: 12px 0px 10px 40px;
