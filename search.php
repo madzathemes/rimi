@@ -13,12 +13,12 @@
 	<div class="col-md-8">
 		<?php if ( have_posts() ) : ?>
 
-			<?php if ( shortcode_exists( 'posts_' ) ) {
+			<?php if ( shortcode_exists( 'posts' ) ) {
 
 				echo do_shortcode('[posts pagination=on type=normal-right ]');
-echo "koks1";
+
 			} else {
-echo "koks2";
+
 				global $query_string;
 
 				$query_args = explode("&", $query_string);
@@ -34,9 +34,9 @@ echo "koks2";
 				$the_query = new WP_Query($search_query);
 
 
-				if ( have_posts() ) :
-					/* Start the Loop */
-					while ( have_posts() ) : the_post();?>
+					if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 							<h2><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo get_the_title();  ?></a></h2>
 						<?php endwhile; ?>
 					<?php else : ?>
