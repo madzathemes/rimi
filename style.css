@@ -1326,7 +1326,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   font-family: "madza";
   position: absolute;
   margin-top: 16px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .nav-search-input {
   position: absolute;
@@ -1344,7 +1344,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
     opacity: 1;
 }
 .nav-search-input input {
-  line-height: 46px;
+  line-height: 47px;
   padding: 0px 20px;
   width: 100%;
   color: white;
