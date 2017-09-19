@@ -2769,7 +2769,7 @@ background-color: rgba(0,0,0,.6);
 }
 .entry-content {
   padding-right: 49px;
-  padding-left: 0px;
+  padding-left: 40px;
 }
 .entry-content ul, .entry-content ol {
     margin: 0px 0px 20px 20px;
