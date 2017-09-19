@@ -16,9 +16,9 @@
 			<?php if ( shortcode_exists( 'posts' ) ) {
 
 				echo do_shortcode('[posts pagination=on type=normal-right ]');
-
+echo "koks1";
 			} else {
-
+echo "koks2";
 				global $query_string;
 
 				$query_args = explode("&", $query_string);
