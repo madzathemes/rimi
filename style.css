@@ -1391,7 +1391,8 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 /* SIDEBAR */
 
 /* HEADING */
-h2.heading {
+h2.heading,
+.pagination > h2 {
   text-align: center;
   text-transform: uppercase;
   position: relative;
