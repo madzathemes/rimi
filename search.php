@@ -13,7 +13,7 @@
 	<div class="col-md-8">
 		<?php if ( have_posts() ) : ?>
 
-			<?php if ( shortcode_exists( 'posts' ) ) {
+			<?php if ( shortcode_exists( 'posts_' ) ) {
 
 				echo do_shortcode('[posts pagination=on type=normal-right ]');
 
