@@ -3247,6 +3247,9 @@ blockquote {
   .background-ad {
     display: none;
   }
+  .poster h2 {
+    font-size: 18px
+  }
   .header-wrap {
     margin-top: 0px !important;
   }
