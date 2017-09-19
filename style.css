@@ -3491,7 +3491,9 @@ blockquote {
   .after-title {
     margin-bottom: 20px;
   }
-
+  .post-style-6 .single-media-top {
+    height: 400px;
+  }
 }
 
 @media all and (max-width: 645px) {
