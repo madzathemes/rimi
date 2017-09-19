@@ -3174,8 +3174,12 @@ blockquote {
   .poster.normal .poster-image {
     margin-right: 20px;
   }
+  .boxed-layout-on .poster-prev,
   .boxed-layout-on .poster-next {
-    left: 10px
+    left: 0px
+  }
+  .post-carousel {
+    padding-left: 50px;
   }
   .grid-post {
     width: 460px;
