@@ -32,7 +32,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
     <?php if ( get_the_author_meta( 'description' )) { ?>
       <div class="author-info">
         <div class="author-avatar">
-          <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'rimi_author_bio_avatar_size', 100 ) ); ?>
+          <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'rimi_author_bio_avatar_size', 80 ) ); ?>
           </div>
           <div class="author-description">
             <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><h3><?php printf( esc_html__( '%s', 'rimi' ), get_the_author() ); ?></h3></a>
