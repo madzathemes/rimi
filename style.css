@@ -2222,7 +2222,8 @@ h2.heading span,
 }
 .grid-post .post-info {
   padding-bottom: 10px;
-  font-size: 14px !important;
+  font-size: 11px !important;
+  font-weight: bold;
 }
 
 .grid-post .poster-cat span {
@@ -2230,10 +2231,6 @@ h2.heading span,
   color: white;
   font-size: 11px;
   padding: 8px 11px
-}
-.grid-post.style-1.nr-3 .post-info,
-.grid-post.style-1.nr-4 .post-info {
-  display: none;
 }
 .grid-post.style-1.nr-3 h2,
 .grid-post.style-1.nr-4 h2 {
