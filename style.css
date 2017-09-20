@@ -1810,12 +1810,9 @@ h2.heading span,
 
 .poster-large-link {
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 5px 9px;
-  text-transform: uppercase;
   font-size: 12px;
   margin: 0px 20px;
-  font-weight: 700;
+  font-weight: 800;
   display: inline-block;
 }
 .poster-large-image {
