@@ -1690,7 +1690,7 @@ h2.heading span,
   margin-top: 3px;
   font-size: 10px;
   margin-left: -15px;
-  font-weight: bold;
+  font-weight: normal !important;
 }
 .poster-views {
   padding: 0px 7px 0px 13px;
@@ -1702,7 +1702,7 @@ h2.heading span,
   margin-top: 2px;
   font-size: 12px;
   margin-left: -12px;
-  font-weight: bold;
+  font-weight: normal !important;
 }
 .poster-comments {
   padding: 0px 0px 0px 15px;
@@ -1714,7 +1714,7 @@ h2.heading span,
   margin-top: 1px;
   font-size: 12px;
   margin-left: -15px;
-  font-weight: bold;
+  font-weight: normal !important;
 }
 .poster.img-empty .poster-info {
   position: relative;
