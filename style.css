@@ -1062,6 +1062,9 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   font-weight: 600;
   font-size: 13px;
 }
+.top-nav a:hover {
+  color: white;
+}
 
 /* HEAD SMALL NAV */
 .nav-button {
