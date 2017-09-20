@@ -853,8 +853,8 @@ div.sf-menu > ul > li > a::before {
   content: "";
   width: 100%;
   display: inline-block;
-  height: 26px;
-  margin-top: -4px;
+  height: 27px;
+  margin-top: -5px;
   padding: 0px 2px;
   left: 0px;
   position: absolute;
