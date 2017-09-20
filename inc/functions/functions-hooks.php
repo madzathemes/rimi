@@ -22,7 +22,7 @@ function rimi_css() {
 			.mt-tabc:hover, .mt-tabc.active,
 			.comment-respond .logged-in-as a { color:'. esc_attr($options['colors_default']) .'; }
 			.entry-content blockquote { border-color:'. esc_attr($options['colors_default']) .'; }
-			.theme-background,
+			.mt-theme-background,
 			button:hover,
 			input[type="submit"]:hover,
 			input[type="button"]:hover,
