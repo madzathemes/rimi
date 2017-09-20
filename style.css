@@ -2582,8 +2582,8 @@ background-color: rgba(0,0,0,.6);
 }
 
 .author-description h3 {
-  padding: 15px 0px 0px !important;
-  font-size: 18px !important
+  padding: 0px 0px 0px !important;
+  font-size: 17px !important
 }
 .author-description h5 {
   padding: 5px 0px 5px 50px;
@@ -2593,10 +2593,12 @@ background-color: rgba(0,0,0,.6);
 }
 .single .author-info a {
   font-weight: bold;
+  padding-left: 80px
 }
 .single .author-info p {
   padding-bottom: 10px;
   font-size: 15px;
+  padding-left: 80px
 }
 .entry-meta .author-info {
   background: #f9f9f9 !important;
@@ -2617,6 +2619,9 @@ background-color: rgba(0,0,0,.6);
   display:inline-block;
   margin: -20px 10px 0px -40px;
   float: left;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
 }
 .author-info {
   margin-left: 40px
@@ -2626,7 +2631,7 @@ background-color: rgba(0,0,0,.6);
 }
 .entry-meta .author-info {
   padding: 20px 40px 40px;
-  margin-bottom: 40px;
+  margin-bottom: 40px;.author-description h3
   margin-left: 0px;
 }
 
