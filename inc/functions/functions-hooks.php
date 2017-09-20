@@ -38,7 +38,8 @@ function rimi_css() {
 			.mt-tabc:before,
 			.mt-subscribe-footer input.mt-s-b:hover,
 			.single-media-title .single-cat-wrap .post-categories li a,
-			.grid-post .poster-cat span { background: '. esc_attr($options['colors_default']) .'; }';
+			.grid-post .poster-cat span,
+			.mc4wp-form, .letter-wrap { background: '. esc_attr($options['colors_default']) .'; }';
 	 }
 
 	 // Button Color
