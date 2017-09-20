@@ -21,7 +21,8 @@ function rimi_css() {
 			.footer .mail,
 			.mt-tabc:hover, .mt-tabc.active,
 			.comment-respond .logged-in-as a { color:'. esc_attr($options['colors_default']) .'; }
-			.entry-content blockquote { border-color:'. esc_attr($options['colors_default']) .'; theme-background,
+			.entry-content blockquote { border-color:'. esc_attr($options['colors_default']) .'; }
+			.theme-background,
 			button:hover,
 			input[type="submit"]:hover,
 			input[type="button"]:hover,
@@ -37,8 +38,7 @@ function rimi_css() {
 			.mt-tabc:before,
 			.mt-subscribe-footer input.mt-s-b:hover,
 			.single-media-title .single-cat-wrap .post-categories li a,
-			.grid-post .poster-cat span,
-			.footer-scroll-to-top { background: '. esc_attr($options['colors_default']) .'; }';
+			.grid-post .poster-cat span { background: '. esc_attr($options['colors_default']) .'; }';
 	 }
 
 	 // Button Color
