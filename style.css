@@ -1618,7 +1618,6 @@ h2.heading span,
   padding: 3px 6px 3px 0px;
   font-size: 11px;
   margin-top: 10px;
-  font-weight: bold
 }
 .poster-data span,
 .poster-data .counte {
@@ -1691,6 +1690,7 @@ h2.heading span,
   margin-top: 3px;
   font-size: 10px;
   margin-left: -15px;
+  font-weight: bold;
 }
 .poster-views {
   padding: 0px 7px 0px 13px;
@@ -1702,6 +1702,7 @@ h2.heading span,
   margin-top: 2px;
   font-size: 12px;
   margin-left: -12px;
+  font-weight: bold;
 }
 .poster-comments {
   padding: 0px 0px 0px 15px;
@@ -1713,6 +1714,7 @@ h2.heading span,
   margin-top: 1px;
   font-size: 12px;
   margin-left: -15px;
+  font-weight: bold;
 }
 .poster.img-empty .poster-info {
   position: relative;
