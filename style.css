@@ -1056,7 +1056,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   line-height: 46px;
   padding: 0px 12px;
   width: 46px;
-  height: 47px;
+  height: 48px;
 }
 .nav-button:hover,
 .nav-button:hover::before,
@@ -1292,7 +1292,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 /* HEAD URL */
 .nav-url a {
   padding: 16px 20px;
-  height: 47px;
+  height: 48px;
   border-left: 10px solid white;
   background: #7a7b86;
   display: inline-block;
@@ -1306,7 +1306,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 .nav-search {
   padding: 0px 15px 0px 15px;
   width: 46px;
-  height: 47px;
+  height: 48px;
 }
 .nav-search::before {
   content: "";
@@ -1344,7 +1344,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
     opacity: 1;
 }
 .nav-search-input input {
-  line-height: 47px;
+  line-height: 48px;
   padding: 0px 20px;
   width: 100%;
   color: white;
