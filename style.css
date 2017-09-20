@@ -1555,7 +1555,7 @@ h2.heading span,
   overflow: hidden;
 }
 .poster.normal {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 .lazy-hidden {
     opacity: 0;
