@@ -40,7 +40,8 @@ function rimi_css() {
 			.single-media-title .single-cat-wrap .post-categories li a,
 			.grid-post .poster-cat span,
 			.mc4wp-form, .letter-wrap,
-			.megamenu-span:hover h4 { background: '. esc_attr($options['colors_default']) .'; }';
+			.megamenu-span:hover h4,
+			.footer-scroll-to-top { background: '. esc_attr($options['colors_default']) .'; }';
 	 }
 
 	 // Button Color
