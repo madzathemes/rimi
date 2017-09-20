@@ -1738,6 +1738,9 @@ h2.heading span,
 .poster.normal.img-empty .poster-content {
   padding-top:0px;
 }
+.poster-content p {
+  color: #92939c
+}
 .poster:hover h2,
 .poster-small:hover h4{
   color: #ff6226
@@ -2773,7 +2776,7 @@ body.blog article {
   margin-bottom: 40px;
   border-bottom: 2px solid #dedede;
 }
-.single.entry-content {
+.single .entry-content {
   padding-right: 49px;
   padding-left: 40px;
   padding-bottom: 20px;
