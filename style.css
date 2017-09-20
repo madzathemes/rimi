@@ -2944,13 +2944,11 @@ blockquote {
   font-size: 17px;
 }
 .comment-reply-link {
-  right: 0px;
-  bottom: 0px;
   padding: 5px 0px 3px 0px;
-  color: #7c7d88;
+  color: #222222;
   font-size: 11px;
-  text-transform: uppercase;
-  position: absolute;
+  margin-left: 65px;
+  font-weight: bold;
 }
 .comment-author .fn {
   font-size: 14px;
