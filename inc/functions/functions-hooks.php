@@ -41,7 +41,9 @@ function rimi_css() {
 			.grid-post .poster-cat span,
 			.mc4wp-form, .letter-wrap,
 			.megamenu-span:hover h4,
-			.footer-scroll-to-top { background: '. esc_attr($options['colors_default']) .'; }';
+			.footer-scroll-to-top { background: '. esc_attr($options['colors_default']) .'; }
+			button:hover, input[type="submit"]:hover, input[type="button"]:hover { background: '. esc_attr($options['colors_default']) .' !important;}';
+
 	 }
 
 	 // Button Color
