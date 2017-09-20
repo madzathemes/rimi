@@ -20,7 +20,8 @@ function rimi_css() {
 			.head-time #time-live,
 			.footer .mail,
 			.mt-tabc:hover, .mt-tabc.active,
-			.comment-respond .logged-in-as a { color:'. esc_attr($options['colors_default']) .'; }
+			.comment-respond .logged-in-as a,
+			.head-nav a:hover, .head-nav a.active { color:'. esc_attr($options['colors_default']) .'; }
 			.entry-content blockquote { border-color:'. esc_attr($options['colors_default']) .'; }
 			.mt-theme-background,
 			button:hover,
