@@ -39,7 +39,8 @@ function rimi_css() {
 			.mt-subscribe-footer input.mt-s-b:hover,
 			.single-media-title .single-cat-wrap .post-categories li a,
 			.grid-post .poster-cat span,
-			.mc4wp-form, .letter-wrap { background: '. esc_attr($options['colors_default']) .'; }';
+			.mc4wp-form, .letter-wrap,
+			.megamenu-span:hover h4 { background: '. esc_attr($options['colors_default']) .'; }';
 	 }
 
 	 // Button Color
