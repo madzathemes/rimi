@@ -2926,7 +2926,7 @@ blockquote {
   border-radius: 25px;
 }
 .comment-content {
-  padding: 20px 0px;
+  padding: 0px 20px 30px 40px;
 }
 .comment-content p {
   margin-right: 20px;
