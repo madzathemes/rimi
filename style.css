@@ -2593,6 +2593,8 @@ background-color: rgba(0,0,0,.6);
 }
 .single .author-info a {
   font-weight: bold;
+}
+.single .author-link a{
   padding-left: 80px
 }
 .single .author-info p {
