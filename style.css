@@ -2615,7 +2615,7 @@ background-color: rgba(0,0,0,.6);
 }
 .entry-meta .author-avatar img {
   display:inline-block;
-  margin: 18px 10px 0px 0px;
+  margin: -20px 10px 0px -40px;
   float: left;
 }
 .author-info {
