@@ -1806,6 +1806,7 @@ h2.heading span,
   font-weight: 700;
   font-size: 12px;
   color: #ff6226;
+  background: none;
 }
 .poster-large-content h2 {
   font-size: 32px;

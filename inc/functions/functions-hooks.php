@@ -15,8 +15,13 @@ function rimi_css() {
 			a:hover,
 			.poster:hover h2, .poster-small:hover h4,
 			.nav-single .next div:after,
-			.nav-single .previous div:before { color:'. esc_attr($options['colors_default']) .'; }
-			.mt-theme-background,
+			.nav-single .previous div:before,
+			.poster-large-cat span,
+			.head-time #time-live,
+			.footer .mail,
+			.mt-tabc:hover, .mt-tabc.active,
+			.comment-respond .logged-in-as a { color:'. esc_attr($options['colors_default']) .'; }
+			.entry-content blockquote { border-color:'. esc_attr($options['colors_default']) .'; theme-background,
 			button:hover,
 			input[type="submit"]:hover,
 			input[type="button"]:hover,
@@ -30,7 +35,9 @@ function rimi_css() {
 			.single-cat-wrap .post-categories li a,
 			.mt-load-more:hover,
 			.mt-tabc:before,
-			.mt-subscribe-footer input.mt-s-b:hover { background: '. esc_attr($options['colors_default']) .'; }';
+			.mt-subscribe-footer input.mt-s-b:hover,
+			.single-media-title .single-cat-wrap .post-categories li a,
+			.grid-post .poster-cat span { background: '. esc_attr($options['colors_default']) .'; }';
 	 }
 
 	 // Button Color
