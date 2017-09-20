@@ -2771,9 +2771,9 @@ background-color: rgba(0,0,0,.6);
 body.blog article {
   padding-bottom: 40px;
   margin-bottom: 40px;
-  border-bottom: 2px solid #40424c;
+  border-bottom: 2px solid #dedede;
 }
-.single .entry-content {
+.single.entry-content {
   padding-right: 49px;
   padding-left: 40px;
   padding-bottom: 20px;
