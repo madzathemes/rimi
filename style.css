@@ -845,6 +845,9 @@ ul.sf-menu ul, div.sf-menu ul ul {
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
+.sf-menu .dropdown a {
+  padding: 16px 20px 15px 10px;
+}
 .sf-menu a {
 	color: #13a;
 }
