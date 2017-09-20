@@ -2595,12 +2595,12 @@ background-color: rgba(0,0,0,.6);
   font-weight: bold;
 }
 .single .author-link a{
-  padding-left: 80px
+  padding-left: 60px
 }
 .single .author-info p {
   padding-bottom: 10px;
   font-size: 14px;
-  padding-left: 80px
+  padding-left: 60px
 }
 .single-media-title .mt-author-soc a:before   {
   color: white;
@@ -2616,7 +2616,7 @@ background-color: rgba(0,0,0,.6);
 }
 .entry-meta .author-avatar img {
   display:inline-block;
-  margin: -20px 20px 0px -40px;
+  margin: -10px 20px 0px -40px;
   float: left;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
