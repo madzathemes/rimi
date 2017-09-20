@@ -2919,20 +2919,19 @@ blockquote {
   list-style: none;
 }
 .comment-author .avatar {
-  width: 30px;
-  margin-top: -8px;
+  width: 50px;
+  margin-bottom: -22px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
 }
 .comment-content {
-  padding: 0px 20px 30px 40px;
+  padding: 0px 20px 30px 65px;
 }
 .comment-content p {
   margin-right: 20px;
   padding-top: 10px;
-  font-size: 15px;
-  line-height: 1.618em;
+  font-size: 14px;
   padding: 1px 0px;
 }
 .commentlist .pingback:first-child {
@@ -2955,9 +2954,9 @@ blockquote {
   position: absolute;
 }
 .comment-author .fn {
-  font-size: 16px;
+  font-size: 15px;
   color: #222;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 25px;
   margin-right: 10px;
   display: inline-block;
@@ -2967,8 +2966,8 @@ blockquote {
   color: #222;
 }
 .mt_comment_date {
-  font-size: 13px;
-  color: #949494;
+  font-size: 11px;
+  color: #7a7b86;
 }
 .post_sticky {
   padding: 20px 40px 40px;
