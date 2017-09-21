@@ -326,10 +326,10 @@ function rimi_css() {
 
 		// Menu Links
 	 $options_in = get_theme_mod( 'magazin_bg_ad_space', array('top' => '0px', 'bottom' => '0px'));
- 	 if(!empty($options_in['top'])){
+ 	 if($options_in['top'] != "0px" ){
  		 $custom_styles .='.header-wrap { margin-top:'. esc_attr($options_in['top']) .'!important; }';
  	 }
-	 if(!empty($options_in['bottom'])){
+	 if($options_in['bottom'] != "0px"){
  		 $custom_styles .='.footer-wrap { margin-bottom:'. esc_attr($options_in['bottom']) .'!important; }';
  	 }
 
