@@ -20,7 +20,12 @@ if  (!empty($option['menu_top_ad'])) {
 }
 ?>
 <body <?php body_class(); ?>>
-<a target="_blank" href="<?php echo get_theme_mod('magazin_bg_ad_url'); ?>" class="background-ad"></a>
+<?php $ad_url = get_theme_mod('magazin_bg_ad_url' '#'); ?>
+<?php $ad_img = get_theme_mod('magazin_bg_ad'); ?>
+<?php if($ad_url['image'] != ""){ ?>
+	<a target="_blank" href="<?php echo esc_url($ad_url); ?>" class="background-ad"></a>
+<?php } ?>
+
 <?php
 $bg_post = get_post_meta(get_the_ID(), "magazin_background_image", true);
 $style = get_post_meta(get_the_ID(), "magazin_post_style", true);
