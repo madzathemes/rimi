@@ -1257,11 +1257,8 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   color: #ff6226;
 }
 .fixed-top {
+  margin-top: -300px;
   -webkit-backface-visibility: hidden;
-  transform: translate(0,-130px);
-  -webkit-transform: translate(0,-130px); /** Safari & Chrome **/
-  -o-transform: translate(0,-130px); /** Opera **/
-  -moz-transform: translate(0,-130px); /** Firefox **/
   height: 45px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
@@ -1272,10 +1269,10 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   background: white;
 }
 .fixed-on .fixed-top {
-  transform: translate(0,0);
-  -webkit-transform: translate(0,0); /** Safari & Chrome **/
-  -o-transform: translate(0,0); /** Opera **/
-  -moz-transform: translate(0,0); /** Firefox **/
+  transform: translate(0,300px);
+  -webkit-transform: translate(0,300px); /** Safari & Chrome **/
+  -o-transform: translate(0,300px); /** Opera **/
+  -moz-transform: translate(0,300px); /** Firefox **/
 }
 .nav-down.fixed-on .fixed-top {
   transform: translate(0,45px);
