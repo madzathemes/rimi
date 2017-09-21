@@ -3204,8 +3204,8 @@ blockquote {
 }
 
 @media all and (max-width: 1199px) {
-  .poster-prev {
-    left: 0px;
+  .poster-next {
+    left: 10px;
   }
 
   .poster.size-350.normal .poster-image {
