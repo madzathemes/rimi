@@ -3919,10 +3919,10 @@ ul.page-numbers li {
   color: white;
   padding: 20px;
   height: 100%;
-  width: 100%;
+  max-width: 400px;
   position: fixed;
   z-index: 99999;
-  margin: 0 0 0 -100%;
+  margin: 0 0 0 -400px;
   -webkit-transition: transform .7s ease;
   -moz-transition: transform .7s ease;
   -o-transition: transform .7s ease;
@@ -3957,7 +3957,6 @@ ul.page-numbers li {
 }
 .mt-smart-menu .menu-item-has-children {
   position: relative;
-  max-width: 280px;
 }
 .mt-smart-menu .menu-item-has-children span {
   width: 100%;
