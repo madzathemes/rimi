@@ -324,6 +324,16 @@ function rimi_css() {
 		if(!empty($options_in['trending'])){ if($options_in['trending']!='#fffff1'){$custom_styles .='.footer .mt_l_trending:before { color:'. esc_attr($options_in['trending']) .'!important; }'; }}
 
 
+		// Menu Links
+	 $options_in = get_theme_mod( 'magazin_bg_ad_space', array('top' => '0px', 'bottom' => '0px'));
+ 	 if(!empty($options_in['top'])){if(
+ 		 $custom_styles .='.header-wrap { margin-top:'. esc_attr($options_in['top']) .'!important; }';
+ 	 }
+	 if(!empty($options_in['bottom'])){if(
+ 		 $custom_styles .='.footer-wrap { margin-bottom:'. esc_attr($options_in['bottom']) .'!important; }';
+ 	 }
+
+
 	 if ( $custom_styles != '' ) {
 	  $css = preg_replace("/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/", "\n", $custom_styles);
 		wp_add_inline_style( 'rimi-style', $css );

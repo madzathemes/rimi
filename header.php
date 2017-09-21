@@ -20,7 +20,7 @@ if  (!empty($option['menu_top_ad'])) {
 }
 ?>
 <body <?php body_class(); ?>>
-<div class="background-ad"></div>
+<a href="<?php echo get_theme_mod('magazin_bg_ad_url'); ?>" class="background-ad"></a>
 <?php
 $bg_post = get_post_meta(get_the_ID(), "magazin_background_image", true);
 $style = get_post_meta(get_the_ID(), "magazin_post_style", true);
