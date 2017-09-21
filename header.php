@@ -52,8 +52,8 @@ if(!empty($style)){
 </div>
 
 
+<?php rimi_header_fixed(); ?>
 <div class="mt-outer-wrap">
 
-<?php rimi_header_fixed(); ?>
 
 <?php rimi_header(); ?>
