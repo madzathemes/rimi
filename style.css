@@ -2404,7 +2404,7 @@ h2.heading span,
   line-height: 20px;
 }
 .share li a::before {
-  font-size: 21px;
+  font-size: 18px;
   margin-left: -22px;
   position: absolute;
 }
