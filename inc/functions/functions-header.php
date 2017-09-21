@@ -81,13 +81,13 @@ if(!empty($option['mobile_header_type'])) {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="top-nav <?php echo esc_attr($menu_boxed); ?> container-fluid">
-
-						<div class="nav-button pointer pull-left <?php if ( false == get_theme_mod( 'mt_menu_small_on', true ) and class_exists('md_walker') ) { ?>hide-desktop<?php } ?>">
-							<div class="mt-m-cool-button">
-								<span class="mt-m-cool-button-line"></span>
+						<?php if (class_exists('md_walker') ) { ?>
+							<div class="nav-button pointer pull-left <?php if ( false == get_theme_mod( 'mt_menu_small_on', true )) { ?>hide-desktop<?php } ?>">
+								<div class="mt-m-cool-button">
+									<span class="mt-m-cool-button-line"></span>
+								</div>
 							</div>
-						</div>
-
+						<?php } ?>
 						<div class="nav pull-left">
 							<?php rimi_nav(); ?>
 						</div>
