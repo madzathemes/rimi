@@ -3918,6 +3918,7 @@ ul.page-numbers li {
   display: block !important;
   color: white;
   padding: 20px;
+  width: 400px;
   height: 100%;
   max-width: 400px;
   position: fixed;
