@@ -61,7 +61,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
         <small class="color-silver-light"><?php the_date(); ?></small>
       </div>
     </div>
-    <?php if(function_exists('magazin_text_domain')) { ?>
+    <?php if(function_exists('magazin_text_domain_')) { ?>
       <div class="post-statistic pull-left">
         <?php if(!empty($shares)){ ?><span class="stat-shares color-silver-light"><strong><?php echo esc_attr($shares); ?></strong></span><?php } ?>
         <?php if(!empty($viewes)){ ?><span class="stat-views"><strong><?php echo esc_attr($viewes) ?></strong> </span><?php } ?>
