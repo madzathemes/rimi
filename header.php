@@ -20,6 +20,8 @@ if  (!empty($option['menu_top_ad'])) {
 }
 ?>
 <body <?php body_class(); ?>>
+
+	<?php rimi_header_fixed(); ?>
 <?php $ad_url = get_theme_mod('magazin_bg_ad_url'); ?>
 <?php if($ad_url != ""){ ?>
 	<a target="_blank" href="<?php echo esc_url($ad_url); ?>" class="background-ad"></a>
@@ -52,7 +54,6 @@ if(!empty($style)){
 </div>
 
 
-<?php rimi_header_fixed(); ?>
 <div class="mt-outer-wrap">
 
 
