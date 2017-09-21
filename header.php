@@ -21,8 +21,7 @@ if  (!empty($option['menu_top_ad'])) {
 ?>
 <body <?php body_class(); ?>>
 <?php $ad_url = get_theme_mod('magazin_bg_ad_url', '#'); ?>
-<?php $ad_img = get_theme_mod('magazin_bg_ad'); ?>
-<?php if($ad_url['image'] != ""){ ?>
+<?php if($ad_url != "#"){ ?>
 	<a target="_blank" href="<?php echo esc_url($ad_url); ?>" class="background-ad"></a>
 <?php } ?>
 
