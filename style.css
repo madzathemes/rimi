@@ -3201,7 +3201,7 @@ blockquote {
   .boxed-layout-on .poster-prev {
     left: 0px;
   }
-  .poster-next {
+  .boxed-layout-on.poster-next {
     left: 10px;
   }
 
