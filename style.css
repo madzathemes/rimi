@@ -3204,7 +3204,7 @@ blockquote {
 
 }
 @media all and (max-width: 1230px) {
-  .boxed-layout-on.poster-next {
+  .boxed-layout-on .poster-next {
     left: 10px;
   }
 }
