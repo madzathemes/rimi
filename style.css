@@ -3201,12 +3201,13 @@ blockquote {
   .boxed-layout-on .poster-prev {
     left: 0px;
   }
+
+}
+@media all and (max-width: 1230px) {
   .boxed-layout-on.poster-next {
     left: 10px;
   }
-
 }
-
 @media all and (max-width: 1199px) {
 
   .poster.size-350.normal .poster-image {
