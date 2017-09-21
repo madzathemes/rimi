@@ -1211,7 +1211,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   height: 45px;
   z-index: 999;
   background: white;
-  margin-top: -300px;
+  margin-top: -300px!important;
 }
 .fixed-top-menu .logo {
   display: inline-block;
