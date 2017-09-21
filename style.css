@@ -4015,8 +4015,8 @@ ul.page-numbers li {
   content: "\e900";
   display: inline-block;
   position: absolute;
-  font-size: 31px;
-  padding: 20px;
+  font-size: 21px;
+  padding: 25px;
   top: 0px;
   right: 0px;
   cursor: pointer;
