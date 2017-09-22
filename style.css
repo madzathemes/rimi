@@ -1272,10 +1272,10 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   -moz-transform: translate(0,0); /** Firefox **/
 }
 .nav-down.fixed-on .fixed-top {
-  transform: translate(0,90px);
-  -webkit-transform: translate(0,90px); /** Safari & Chrome **/
-  -o-transform: translate(0,90px); /** Opera **/
-  -moz-transform: translate(0,90px); /** Firefox **/
+  transform: translate(0,135px);
+  -webkit-transform: translate(0,135px); /** Safari & Chrome **/
+  -o-transform: translate(0,135px); /** Opera **/
+  -moz-transform: translate(0,135px); /** Firefox **/
 }
 .fixed-top .share  {
   margin-bottom: 0px;
