@@ -3935,6 +3935,10 @@ ul.page-numbers li {
   -moz-transition: transform .7s ease;
   -o-transition: transform .7s ease;
   transition: transform .7s ease;
+  top: 0px;
+}
+.admin-bar .mt-smart-menu {
+  top: 32px;
 }
 .mt-smart-menu ul {
   list-style: none;
