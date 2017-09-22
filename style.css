@@ -1253,6 +1253,9 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 .fixed-top-menu ul li a:hover {
   color: #ff6226;
 }
+.mt-fixed-row {
+  position: absolute;
+}
 .fixed-top {
   margin-top: -145px!important;
   -webkit-backface-visibility: hidden;

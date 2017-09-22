@@ -328,10 +328,13 @@ function rimi_css() {
 	 $options_in = get_theme_mod( 'magazin_bg_ad_space', array('top' => '0px', 'bottom' => '0px'));
  	 if($options_in['top'] != "0px" ){
  		 $custom_styles .='.mt-outer-wrap { margin-top:'. esc_attr($options_in['top']) .'!important; }';
+		 $custom_styles .='.mt-fixed-row { margin-top: -'. esc_attr($options_in['top']) .'!important; }';
  	 }
 	 if($options_in['bottom'] != "0px"){
  		 $custom_styles .='.mt-outer-wrap { margin-bottom:'. esc_attr($options_in['bottom']) .'!important; }';
  	 }
+
+
 
 
 	 if ( $custom_styles != '' ) {
