@@ -1266,10 +1266,10 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   background: white;
 }
 .fixed-on .fixed-top {
-  transform: translate(0,0);
-  -webkit-transform: translate(0,0); /** Safari & Chrome **/
-  -o-transform: translate(0,0); /** Opera **/
-  -moz-transform: translate(0,0); /** Firefox **/
+  transform: translate(0,45px);
+  -webkit-transform: translate(0,45px); /** Safari & Chrome **/
+  -o-transform: translate(0,45px); /** Opera **/
+  -moz-transform: translate(0,45px); /** Firefox **/
 }
 .nav-down.fixed-on .fixed-top {
   transform: translate(0,90px);
