@@ -21,10 +21,7 @@ if  (!empty($option['menu_top_ad'])) {
 ?>
 <body <?php body_class(); ?>>
 
-<?php $ad_url = get_theme_mod('magazin_bg_ad_url'); ?>
-<?php if($ad_url != ""){ ?>
-	<a target="_blank" href="<?php echo esc_url($ad_url); ?>" class="background-ad"></a>
-<?php } ?>
+
 
 <?php
 $bg_post = get_post_meta(get_the_ID(), "magazin_background_image", true);
@@ -54,6 +51,10 @@ if(!empty($style)){
 
 
 <div class="mt-outer-wrap">
+	<?php $ad_url = get_theme_mod('magazin_bg_ad_url'); ?>
+	<?php if($ad_url != ""){ ?>
+		<a target="_blank" href="<?php echo esc_url($ad_url); ?>" class="background-ad"></a>
+	<?php } ?>
 <?php rimi_header_fixed(); ?>
 
 <?php rimi_header(); ?>
