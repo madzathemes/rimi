@@ -1254,7 +1254,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   color: #ff6226;
 }
 .fixed-top {
-  margin-top: -45px!important;
+  margin-top: -145px!important;
   -webkit-backface-visibility: hidden;
   height: 45px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
@@ -1266,16 +1266,16 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   background: white;
 }
 .fixed-on .fixed-top {
-  transform: translate(0,45px);
-  -webkit-transform: translate(0,45px); /** Safari & Chrome **/
-  -o-transform: translate(0,45px); /** Opera **/
-  -moz-transform: translate(0,45px); /** Firefox **/
+  transform: translate(0,145px);
+  -webkit-transform: translate(0,145px); /** Safari & Chrome **/
+  -o-transform: translate(0,145px); /** Opera **/
+  -moz-transform: translate(0,145px); /** Firefox **/
 }
 .nav-down.fixed-on .fixed-top {
-  transform: translate(0,90px);
-  -webkit-transform: translate(0,90px); /** Safari & Chrome **/
-  -o-transform: translate(0,90px); /** Opera **/
-  -moz-transform: translate(0,90px); /** Firefox **/
+  transform: translate(0,190px);
+  -webkit-transform: translate(0,190px); /** Safari & Chrome **/
+  -o-transform: translate(0,190px); /** Opera **/
+  -moz-transform: translate(0,190px); /** Firefox **/
 }
 .fixed-top .share  {
   margin-bottom: 0px;
