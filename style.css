@@ -3293,7 +3293,7 @@ blockquote {
 }
 
 @media all and (max-width: 991px) {
-  .mt-outer-wrap {
+  body .mt-outer-wrap {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
   }
