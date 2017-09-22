@@ -335,8 +335,6 @@ function rimi_css() {
  	 }
 
 
-
-
 	 if ( $custom_styles != '' ) {
 	  $css = preg_replace("/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/", "\n", $custom_styles);
 		wp_add_inline_style( 'rimi-style', $css );
