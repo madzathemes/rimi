@@ -1211,7 +1211,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   height: 45px;
   z-index: 999;
   background: white;
-  margin-top: 0px!important;
+  margin-top: -45px!important;
 }
 .fixed-top-menu .logo {
   display: inline-block;
@@ -1272,10 +1272,10 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   -moz-transform: translate(0,0px); /** Firefox **/
 }
 .nav-down.fixed-on .fixed-top {
-  transform: translate(0,45px);
-  -webkit-transform: translate(0,45px); /** Safari & Chrome **/
-  -o-transform: translate(0,45px); /** Opera **/
-  -moz-transform: translate(0,45px); /** Firefox **/
+  transform: translate(0,90px);
+  -webkit-transform: translate(0,90px); /** Safari & Chrome **/
+  -o-transform: translate(0,90px); /** Opera **/
+  -moz-transform: translate(0,90px); /** Firefox **/
 }
 .fixed-top .share  {
   margin-bottom: 0px;
