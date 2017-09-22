@@ -1211,7 +1211,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   height: 45px;
   z-index: 999;
   background: white;
-  margin-top: -45px!important;
+  margin-top: -145px!important;
 }
 .fixed-top-menu .logo {
   display: inline-block;
@@ -1225,10 +1225,10 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   width: auto !important;
 }
 .nav-down.fixed-on .fixed-top-menu {
-  transform: translate(0,45px);
-   -webkit-transform: translate(0,45px); /** Safari & Chrome **/
-   -o-transform: translate(0,45px); /** Opera **/
-   -moz-transform: translate(0,45px); /** Firefox **/
+  transform: translate(0,145px);
+   -webkit-transform: translate(0,145px); /** Safari & Chrome **/
+   -o-transform: translate(0,145px); /** Opera **/
+   -moz-transform: translate(0,145px); /** Firefox **/
 }
 .fixed-top-menu ul {
   list-style: none;
