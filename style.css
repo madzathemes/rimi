@@ -3293,6 +3293,10 @@ blockquote {
 }
 
 @media all and (max-width: 991px) {
+  .mt-outer-wrap {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
   .poster-small h4 {
     font-size: 13px;
   }
