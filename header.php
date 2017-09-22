@@ -48,7 +48,6 @@ if(!empty($style)){
 	<?php rimi_socials(); ?>
 	<?php rimi_nav_mobile(); ?>
 </div>
-<?php rimi_header_fixed(); ?>
 
 	<?php $ad_url = get_theme_mod('magazin_bg_ad_url'); ?>
 	<?php if($ad_url != ""){ ?>
@@ -57,5 +56,6 @@ if(!empty($style)){
 
 <div class="mt-outer-wrap">
 
+<?php rimi_header_fixed(); ?>
 
 <?php rimi_header(); ?>
