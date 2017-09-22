@@ -1225,10 +1225,10 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   width: auto !important;
 }
 .nav-down.fixed-on .fixed-top-menu {
-  transform: translate(0,45px);
-   -webkit-transform: translate(0,45px); /** Safari & Chrome **/
-   -o-transform: translate(0,45px); /** Opera **/
-   -moz-transform: translate(0,45px); /** Firefox **/
+  transform: translate(0,0);
+   -webkit-transform: translate(0,0); /** Safari & Chrome **/
+   -o-transform: translate(0,0); /** Opera **/
+   -moz-transform: translate(0,0); /** Firefox **/
 }
 .fixed-top-menu ul {
   list-style: none;
@@ -1266,16 +1266,16 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   background: white;
 }
 .fixed-on .fixed-top {
-  transform: translate(0,0px);
-  -webkit-transform: translate(0,0px); /** Safari & Chrome **/
-  -o-transform: translate(0,0px); /** Opera **/
-  -moz-transform: translate(0,0px); /** Firefox **/
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0); /** Safari & Chrome **/
+  -o-transform: translate(0,0); /** Opera **/
+  -moz-transform: translate(0,0); /** Firefox **/
 }
 .nav-down.fixed-on .fixed-top {
-  transform: translate(0,90px);
-  -webkit-transform: translate(0,90px); /** Safari & Chrome **/
-  -o-transform: translate(0,90px); /** Opera **/
-  -moz-transform: translate(0,90px); /** Firefox **/
+  transform: translate(0,45px);
+  -webkit-transform: translate(0,45px); /** Safari & Chrome **/
+  -o-transform: translate(0,45px); /** Opera **/
+  -moz-transform: translate(0,45px); /** Firefox **/
 }
 .fixed-top .share  {
   margin-bottom: 0px;
