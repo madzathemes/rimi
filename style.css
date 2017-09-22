@@ -1211,7 +1211,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   height: 45px;
   z-index: 999;
   background: white;
-  margin-top: -300px!important;
+  margin-top: 0px!important;
 }
 .fixed-top-menu .logo {
   display: inline-block;
@@ -1225,10 +1225,10 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   width: auto !important;
 }
 .nav-down.fixed-on .fixed-top-menu {
-  transform: translate(0,300px);
-   -webkit-transform: translate(0,300px); /** Safari & Chrome **/
-   -o-transform: translate(0,300px); /** Opera **/
-   -moz-transform: translate(0,300px); /** Firefox **/
+  transform: translate(0,45px);
+   -webkit-transform: translate(0,45px); /** Safari & Chrome **/
+   -o-transform: translate(0,45px); /** Opera **/
+   -moz-transform: translate(0,45px); /** Firefox **/
 }
 .fixed-top-menu ul {
   list-style: none;
@@ -1266,10 +1266,10 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   background: white;
 }
 .fixed-on .fixed-top {
-  transform: translate(0,45px);
-  -webkit-transform: translate(0,45px); /** Safari & Chrome **/
-  -o-transform: translate(0,45px); /** Opera **/
-  -moz-transform: translate(0,45px); /** Firefox **/
+  transform: translate(0,0px);
+  -webkit-transform: translate(0,0px); /** Safari & Chrome **/
+  -o-transform: translate(0,0px); /** Opera **/
+  -moz-transform: translate(0,0px); /** Firefox **/
 }
 .nav-down.fixed-on .fixed-top {
   transform: translate(0,45px);
