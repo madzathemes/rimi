@@ -36,44 +36,47 @@ if ( ! function_exists( 'rimi_entry_meta' ) ) {
  * Create your own _entry_meta() to override in a child theme.
  *
  */
-	function rimi_entry_meta() {
-		 global $rimi_allowed_html_array;
-		// Translators: used between list items, there is a space after the comma.
-		$categories_list = get_the_category_list( esc_html__( ', ', 'rimi' ) );
+	function rimi_entry_meta() { ?>
+		<?php /* translators: used between list items, there is a space after the comma */
+		$categories_list = get_the_category_list( __( ', ', 'rimi' ) );
 
-		// Translators: used between list items, there is a space after the comma.
-		$tag_list = get_the_tag_list( '', esc_html__( ', ', 'rimi' ) );
-
-		$date = sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s"> %4$s</time></a>',
+		/* translators: used between list items, there is a space after the comma */
+		$tag_list = get_the_tag_list( '', __( ', ', 'rimi' ) );
+		$date = sprintf( '<div class="mt-meta-icon mt-icon-date"></div> <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s"> %4$s</time></a>',
 			esc_url( get_permalink() ),
 			esc_attr( get_the_time() ),
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() )
 		);
-
 		$author = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			esc_attr( sprintf( esc_html__( 'View all posts by %s', 'rimi' ), get_the_author() ) ),
+			esc_attr( sprintf( '', get_the_author() ) ),
 			get_the_author()
 		);
-
-		// Translators: 1 is category, 2 is tag, 3 is the date and 4 is the author's name.
-		if ( $tag_list ) {
-			$utility_text = wp_kses(__( '<div class="mt-meta"><i class="fa fa-folder-open-o"></i> %1$s <span class="mt_space"></span> <i class="fa fa-tag"></i> %2$s <span class="mt_space"></span> <i class="fa fa-calendar"></i> %3$s </div>', 'rimi' ), $rimi_allowed_html_array );
-		} elseif ( $categories_list ) {
-			$utility_text = wp_kses(__( '<div class="mt-meta"><i class="fa fa-folder-open-o"></i> %1$s <span class="mt_space"></span> <i class="fa fa-calendar"></i> %3$s </div>', 'rimi' ), $rimi_allowed_html_array );
+		if ( '' != $tag_list ) {
+		    $utility_text = __( '<div class="mt-meta-icon mt-icon-cat"></div>  %1$s <div class="mt-meta-icon mt-icon-tag"></div> %2$s <div class="mt-meta-icon mt-icon-by"></div> <a href="%6$s">%5$s</a>', 'rimi' );
+		} elseif ( '' != $categories_list ) {
+		    $utility_text = __( '<div class="mt-meta-icon mt-icon-cat"></div> %1$s <div class="mt-meta-icon mt-icon-by"></div> <a href="%6$s">%5$s</a>', 'rimi' );
 		} else {
-			$utility_text = wp_kses(__( '<div class="mt-meta">Posted on <i class="fa fa-calendar"></i> %3$s </div>', 'rimi' ), $rimi_allowed_html_array );
+		    $utility_text = __( '<div class="mt-meta-icon mt-icon-by"></div> <a href="%6$s">%5$s</a> ', 'rimi' );
 		}
 
 		printf(
-			$utility_text,
-			$categories_list,
-			$tag_list,
-			$date,
-			$author
+		    $utility_text,
+		    $categories_list,
+		    $tag_list,
+				$date,
+		    esc_url( get_permalink() ),
+
+				$author,
+		    the_title_attribute( 'echo=0' ),
+		    get_the_author(),
+		    esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) )
 		);
-	}
+		?>
+
+		<?php
+}
 }
 
 if ( ! function_exists( 'rimi_content_nav' ) ) {

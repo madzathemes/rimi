@@ -348,6 +348,7 @@ function rimi_header_script() {
 		wp_enqueue_style('rimi-style', get_stylesheet_uri());
 
 		$option = get_option("rimi_theme_options");
+		wp_enqueue_script( 'mt-defer', get_template_directory_uri(). '/inc/js/defer.js', array( 'jquery'),  '1.0', true );
 
 		wp_enqueue_script( 'rimi_script', get_template_directory_uri(). '/inc/js/scripts.js', array( 'jquery'), '', true );
 		wp_localize_script( 'rimi_script', 'ajax_posts', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'noposts' => esc_html__('No older posts found', 'rimi'), ));

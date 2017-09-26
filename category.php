@@ -48,21 +48,31 @@ if(!empty($option['category_post_style'])) {
 	<div class="row">
 		<div class="col-md-12">
 
-			<?php if($grid!=0) { echo do_shortcode('[grid type="'.esc_attr($grid).'" title="'. esc_html__( 'Category','rimi' ) .': '.esc_attr($cat_title).'" title_type="left" category="'.esc_attr($cat_slug).'"  ]'); ?>
-			<?php echo do_shortcode('[space size='.esc_attr($space).' ]'); }?>
+			<?php if ( shortcode_exists( 'posts' ) ) { if($grid!=0) { echo do_shortcode('[grid type="'.esc_attr($grid).'" title="'. esc_html__( 'Category','rimi' ) .': '.esc_attr($cat_title).'" title_type="left" category="'.esc_attr($cat_slug).'"  ]'); ?>
+			<?php echo do_shortcode('[space size='.esc_attr($space).' ]'); } }?>
 
 		</div>
 	</div>
 	<div class="row">
 	<div class="col-md-8  floatleft">
 		<?php if ( have_posts() ) {
-
+			if ( shortcode_exists( 'posts' ) ) {
 			 	if($grid==0) {
 					echo do_shortcode('[posts  pagination=on item_nr='.esc_attr($default_posts_per_page).' offset='.esc_attr($offset).'  category="'.esc_attr($cat_slug).'" type='.esc_attr($post_style).' title="'. esc_html__( 'Category','rimi' ) .': '.esc_attr($cat_title).'" title_type=left ]');
 				} else {
 					echo do_shortcode('[posts pagination=on item_nr='.esc_attr($default_posts_per_page).' offset='.esc_attr($offset).'  category="'.esc_attr($cat_slug).'" type='.esc_attr($post_style).' ]');
 				}
- 		} ?>
+
+
+			}	else {
+					while ( have_posts() ) : the_post();
+						get_template_part( 'content', get_post_format() );
+					endwhile;
+				}
+ 		}
+
+
+		?>
 	</div>
 
 	<div class="col-md-4 sidebar floatright">

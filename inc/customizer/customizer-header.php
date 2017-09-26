@@ -11,19 +11,7 @@ function rimi_customize_header($wp_customize){
 
 
 
-	Kirki::add_field( 'rimi_theme_options[boxed]', array(
-		'type'        => 'radio-image',
-		'settings'    => 'rimi_theme_options[boxed]',
-		'label'       => esc_html__( 'Page Layouts', 'rimi' ),
-		'section'     => 'layout_settings',
-		'default'     => '2',
-		'option_type' => 'option',
-		'priority'    => 10,
-		'choices'     => array(
-				'1'   => get_template_directory_uri() . '/inc/img/boxed.png',
-				'2' => get_template_directory_uri() . '/inc/img/full.png',
-			 ),
-	));
+
 
 	$wp_customize->add_section('rimi_header', array(
         'title'    	=> esc_html__('Header', 'rimi'),
@@ -90,87 +78,6 @@ function rimi_customize_header($wp_customize){
         'settings' => 'rimi_theme_options[header_logox2]',
     )));
 
-    Kirki::add_field( 'rimi_theme_options[mobile_logo]', array(
-      'type'        => 'image',
-      'settings'    => 'rimi_theme_options[mobile_logo]',
-      'label'       => esc_html__( 'Mobile Logo', 'rimi' ),
-      'section'     => 'rimi_logo',
-      'default'     => '',
-      'option_type' => 'option',
-      'priority'    => 10,
-    ) );
-
-    //  =============================
-    //  = Logo Widht
-    //  =============================
-
-    Kirki::add_field( 'rimi_theme_options[logo_width]', array(
-    'type'        => 'number',
-    'settings'    => 'rimi_theme_options[logo_width]',
-    'label'       => esc_attr__( 'Width', 'rimi' ),
-    'section'     => 'rimi_logo_settings',
-    'default'     => 10,
-    'option_type' => 'option',
-    'choices'     => array(
-      'min'  => 20,
-      'max'  => 500,
-      'step' => 1,
-    ),
-  ) );
-
-    //  =============================
-    //  = Logo Height
-    //  =============================
-
-    Kirki::add_field( 'rimi_theme_options[logo_height]', array(
-    'type'        => 'number',
-    'settings'    => 'rimi_theme_options[logo_height]',
-    'label'       => esc_attr__( 'Height', 'rimi' ),
-    'section'     => 'rimi_logo_settings',
-    'default'     => 10,
-    'option_type' => 'option',
-    'choices'     => array(
-      'min'  => 20,
-      'max'  => 200,
-      'step' => 1,
-    ),
-  ) );
-
-	//  =============================
-    //  = Logo margin Top
-    //  =============================
-
-
-    Kirki::add_field( 'rimi_theme_options[logo_top]', array(
-  	'type'        => 'number',
-  	'settings'    => 'rimi_theme_options[logo_top]',
-  	'label'       => esc_attr__( 'Top Space', 'rimi' ),
-  	'section'     => 'rimi_logo_settings',
-  	'default'     => 18,
-    'option_type' => 'option',
-  	'choices'     => array(
-  		'min'  => 0,
-  		'max'  => 120,
-  		'step' => 1,
-  	),
-  ) );
-
-    //  =============================
-    //  = Logo margin Bottom
-    //  =============================
-    Kirki::add_field( 'rimi_theme_options[logo_bottom]', array(
-  	'type'        => 'number',
-  	'settings'    => 'rimi_theme_options[logo_bottom]',
-  	'label'       => esc_attr__( 'Top Space', 'rimi' ),
-  	'section'     => 'rimi_logo_settings',
-  	'default'     => 18,
-    'option_type' => 'option',
-  	'choices'     => array(
-  		'min'  => 0,
-  		'max'  => 120,
-  		'step' => 1,
-  	),
-  ) );
 
     //  =============================
     //  = Logo Height fixed
@@ -484,88 +391,6 @@ function rimi_customize_header($wp_customize){
 				'panel'  => 'panel_header',
     ));
 
-    // MENU TOP AD //
-
-    Kirki::add_field( 'rimi_theme_options[menu_top_ad]', array(
-      'type'        => 'radio-buttonset',
-      'settings'    => 'rimi_theme_options[menu_top_ad]',
-      'label'       => esc_attr__( 'Header Top Content', 'rimi' ),
-      'section'     => 'rimi_header_top',
-      'default'     => 'ad',
-      'priority'    => 1,
-      'option_type'           => 'option',
-      'choices'     => array(
-        'ad'   => esc_attr__( 'Logo, Ad', 'rimi' ),
-        'content' => esc_attr__( 'Logo, Buttons, Time, Weather', 'rimi' ),
-      ),
-   ));
-
-
-   Kirki::add_field( 'mt_header_link_blank', array(
-      'type'        => 'switch',
-      'settings'    => 'mt_header_link_blank',
-      'label'       => esc_html__( 'Header Button Open In New Tap', 'rimi' ),
-      'section'     => 'rimi_header_top',
-      'default'     => 'on',
-      'priority'    => 10,
-      'choices'     => array(
-        'on'  => esc_attr__( 'On', 'rimi' ),
-        'off' => esc_attr__( 'Off', 'rimi' ),
-      ),
-   ) );
-
-   Kirki::add_field( 'mt_menu_small_on', array(
-     	'type'        => 'switch',
-     	'settings'    => 'mt_menu_small_on',
-     	'label'       => esc_attr__( 'Small Menu For Desktop', 'rimi' ),
-     	'section'     => 'rimi_header_top',
-     	'default'     => 'off',
-     	'priority'    => 10,
-     	'choices'     => array(
-        'on'  => esc_attr__( 'On', 'rimi' ),
-        'off' => esc_attr__( 'Off', 'rimi' ),
-     	),
-   ) );
-
-
-   Kirki::add_field( 'mt_menu_search', array(
-       'type'        => 'switch',
-       'settings'    => 'mt_menu_search',
-       'label'       => esc_attr__( 'Search Button', 'rimi' ),
-       'section'     => 'rimi_header_top',
-       'default'     => 'off',
-       'priority'    => 10,
-       'choices'     => array(
-         'on'  => esc_attr__( 'On', 'rimi' ),
-         'off' => esc_attr__( 'Off', 'rimi' ),
-       ),
-   ) );
-
-   Kirki::add_field( 'mt_header_social', array(
-       'type'        => 'switch',
-       'settings'    => 'mt_header_social',
-       'label'       => esc_attr__( 'Header Social', 'rimi' ),
-       'section'     => 'rimi_header_top',
-       'default'     => 'on',
-       'priority'    => 10,
-       'choices'     => array(
-         'on'  => esc_attr__( 'On', 'rimi' ),
-         'off' => esc_attr__( 'Off', 'rimi' ),
-       ),
-   ) );
-
-   Kirki::add_field( 'mt_header_time', array(
-       'type'        => 'switch',
-       'settings'    => 'mt_header_time',
-       'label'       => esc_attr__( 'Time and Date', 'rimi' ),
-       'section'     => 'rimi_header_top',
-       'default'     => 'off',
-       'priority'    => 10,
-       'choices'     => array(
-         'on'  => esc_attr__( 'On', 'rimi' ),
-         'off' => esc_attr__( 'Off', 'rimi' ),
-       ),
-   ) );
 
 		// Latest Posts
 		$wp_customize->add_setting('rimi_theme_options[url_latest]', array(
@@ -655,5 +480,197 @@ function rimi_customize_header($wp_customize){
 }
 
 add_action('customize_register', 'rimi_customize_header');
+
+Kirki::add_field( 'rimi_theme_options[boxed]', array(
+  'type'        => 'radio-image',
+  'settings'    => 'rimi_theme_options[boxed]',
+  'label'       => esc_html__( 'Page Layouts', 'rimi' ),
+  'section'     => 'layout_settings',
+  'default'     => '2',
+  'option_type' => 'option',
+  'priority'    => 10,
+  'choices'     => array(
+      '1'   => get_template_directory_uri() . '/inc/img/boxed.png',
+      '2' => get_template_directory_uri() . '/inc/img/full.png',
+     ),
+));
+
+    Kirki::add_field( 'rimi_theme_options[mobile_logo]', array(
+      'type'        => 'image',
+      'settings'    => 'rimi_theme_options[mobile_logo]',
+      'label'       => esc_html__( 'Mobile Logo', 'rimi' ),
+      'section'     => 'rimi_logo',
+      'default'     => '',
+      'option_type' => 'option',
+      'priority'    => 10,
+    ) );
+
+    //  =============================
+    //  = Logo Widht
+    //  =============================
+
+    Kirki::add_field( 'rimi_theme_options[logo_width]', array(
+    'type'        => 'number',
+    'settings'    => 'rimi_theme_options[logo_width]',
+    'label'       => esc_attr__( 'Width', 'rimi' ),
+    'section'     => 'rimi_logo_settings',
+    'default'     => 10,
+    'option_type' => 'option',
+    'choices'     => array(
+      'min'  => 20,
+      'max'  => 500,
+      'step' => 1,
+    ),
+  ) );
+
+    //  =============================
+    //  = Logo Height
+    //  =============================
+
+    Kirki::add_field( 'rimi_theme_options[logo_height]', array(
+    'type'        => 'number',
+    'settings'    => 'rimi_theme_options[logo_height]',
+    'label'       => esc_attr__( 'Height', 'rimi' ),
+    'section'     => 'rimi_logo_settings',
+    'default'     => 10,
+    'option_type' => 'option',
+    'choices'     => array(
+      'min'  => 20,
+      'max'  => 200,
+      'step' => 1,
+    ),
+  ) );
+
+	//  =============================
+    //  = Logo margin Top
+    //  =============================
+
+
+    Kirki::add_field( 'rimi_theme_options[logo_top]', array(
+  	'type'        => 'number',
+  	'settings'    => 'rimi_theme_options[logo_top]',
+  	'label'       => esc_attr__( 'Top Space', 'rimi' ),
+  	'section'     => 'rimi_logo_settings',
+  	'default'     => 18,
+    'option_type' => 'option',
+  	'choices'     => array(
+  		'min'  => 0,
+  		'max'  => 120,
+  		'step' => 1,
+  	),
+  ) );
+
+    //  =============================
+    //  = Logo margin Bottom
+    //  =============================
+    Kirki::add_field( 'rimi_theme_options[logo_bottom]', array(
+  	'type'        => 'number',
+  	'settings'    => 'rimi_theme_options[logo_bottom]',
+  	'label'       => esc_attr__( 'Top Space', 'rimi' ),
+  	'section'     => 'rimi_logo_settings',
+  	'default'     => 18,
+    'option_type' => 'option',
+  	'choices'     => array(
+  		'min'  => 0,
+  		'max'  => 120,
+  		'step' => 1,
+  	),
+  ) );
+
+    // MENU TOP AD //
+
+    Kirki::add_field( 'rimi_theme_options[menu_top_ad]', array(
+      'type'        => 'radio-buttonset',
+      'settings'    => 'rimi_theme_options[menu_top_ad]',
+      'label'       => esc_attr__( 'Header Top Content', 'rimi' ),
+      'section'     => 'rimi_header_top',
+      'default'     => 'ad',
+      'priority'    => 1,
+      'option_type'           => 'option',
+      'choices'     => array(
+        'ad'   => esc_attr__( 'Logo, Ad', 'rimi' ),
+        'content' => esc_attr__( 'Logo, Buttons, Time, Weather', 'rimi' ),
+      ),
+   ));
+
+
+   Kirki::add_field( 'mt_header_link_blank', array(
+      'type'        => 'switch',
+      'settings'    => 'mt_header_link_blank',
+      'label'       => esc_html__( 'Header Button Open In New Tap', 'rimi' ),
+      'section'     => 'rimi_header_top',
+      'default'     => 'on',
+      'priority'    => 10,
+      'choices'     => array(
+        'on'  => esc_attr__( 'On', 'rimi' ),
+        'off' => esc_attr__( 'Off', 'rimi' ),
+      ),
+   ) );
+
+   Kirki::add_field( 'mt_menu_small_on', array(
+     	'type'        => 'switch',
+     	'settings'    => 'mt_menu_small_on',
+     	'label'       => esc_attr__( 'Small Menu For Desktop', 'rimi' ),
+     	'section'     => 'rimi_header_top',
+     	'default'     => 'off',
+     	'priority'    => 10,
+     	'choices'     => array(
+        'on'  => esc_attr__( 'On', 'rimi' ),
+        'off' => esc_attr__( 'Off', 'rimi' ),
+     	),
+   ) );
+
+
+   Kirki::add_field( 'mt_menu_search', array(
+       'type'        => 'switch',
+       'settings'    => 'mt_menu_search',
+       'label'       => esc_attr__( 'Search Button', 'rimi' ),
+       'section'     => 'rimi_header_top',
+       'default'     => 'off',
+       'priority'    => 10,
+       'choices'     => array(
+         'on'  => esc_attr__( 'On', 'rimi' ),
+         'off' => esc_attr__( 'Off', 'rimi' ),
+       ),
+   ) );
+
+   Kirki::add_field( 'mt_header_social', array(
+       'type'        => 'switch',
+       'settings'    => 'mt_header_social',
+       'label'       => esc_attr__( 'Header Social', 'rimi' ),
+       'section'     => 'rimi_header_top',
+       'default'     => 'on',
+       'priority'    => 10,
+       'choices'     => array(
+         'on'  => esc_attr__( 'On', 'rimi' ),
+         'off' => esc_attr__( 'Off', 'rimi' ),
+       ),
+   ) );
+
+   Kirki::add_field( 'mt_header_time', array(
+       'type'        => 'switch',
+       'settings'    => 'mt_header_time',
+       'label'       => esc_attr__( 'Time and Date', 'rimi' ),
+       'section'     => 'rimi_header_top',
+       'default'     => 'off',
+       'priority'    => 10,
+       'choices'     => array(
+         'on'  => esc_attr__( 'On', 'rimi' ),
+         'off' => esc_attr__( 'Off', 'rimi' ),
+       ),
+   ) );
+
+   Kirki::add_field( 'mt_header_fixed_menu', array(
+       'type'        => 'switch',
+       'settings'    => 'mt_header_fixed_menu',
+       'label'       => esc_attr__( 'Fixed Menu', 'rimi' ),
+       'section'     => 'rimi_header_top',
+       'default'     => 'off',
+       'priority'    => 10,
+       'choices'     => array(
+         'on'  => esc_attr__( 'On', 'rimi' ),
+         'off' => esc_attr__( 'Off', 'rimi' ),
+       ),
+   ) );
 
 ?>

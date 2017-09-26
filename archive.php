@@ -12,9 +12,9 @@
 
 				if (have_posts() ) { ?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
-						<h2><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo get_the_title();  ?></a></h2>
-					<?php endwhile;
+					<?php while ( have_posts() ) : the_post();
+						get_template_part( 'content', get_post_format() );
+					endwhile;
 					the_posts_pagination();
 
 				}

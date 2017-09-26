@@ -17,25 +17,7 @@ function rimi_customize_colors($wp_customize){
     'panel'  => 'colors_settings'
   ));
 
-  Kirki::add_field( 'rimi_theme_options[background_image]', array(
-    'type'        => 'image',
-    'settings'    => 'rimi_theme_options[background_image]',
-    'label'       => esc_html__( 'Background Image', 'rimi' ),
-    'section'     => 'background_settings',
-    'default'     => '',
-    'option_type' => 'option',
-    'priority'    => 10,
-  ) );
 
-  Kirki::add_field( 'rimi_theme_options[background_color]', array(
-    'type'        => 'color',
-    'settings'    => 'rimi_theme_options[background_color]',
-    'label'       => esc_html__( 'Background Color', 'rimi' ),
-    'section'     => 'background_settings',
-    'default'     => '',
-    'option_type' => 'option',
-    'priority'    => 10,
-  ) );
 
   // GENERAL COLORS //
   $wp_customize->add_section('colors_general', array(
@@ -73,6 +55,50 @@ function rimi_customize_colors($wp_customize){
     'title'    	=> esc_html__('Header & Menu Colors', 'rimi'),
     'panel'  => 'colors_settings'
   ));
+
+
+
+  // FOOTER COLORS //
+  $wp_customize->add_section('colors_footer', array(
+    'title'    	=> esc_html__('Footer Colors', 'rimi'),
+    'panel'  => 'colors_settings'
+  ));
+
+
+
+  // MENU COLORS //
+  $wp_customize->add_section('colors_other', array(
+    'title'    	=> esc_html__('Other Colors', 'rimi'),
+    'panel'  => 'colors_settings'
+  ));
+
+
+
+
+
+}
+
+add_action('customize_register', 'rimi_customize_colors');
+
+  Kirki::add_field( 'rimi_theme_options[background_image]', array(
+    'type'        => 'image',
+    'settings'    => 'rimi_theme_options[background_image]',
+    'label'       => esc_html__( 'Background Image', 'rimi' ),
+    'section'     => 'background_settings',
+    'default'     => '',
+    'option_type' => 'option',
+    'priority'    => 10,
+  ) );
+
+  Kirki::add_field( 'rimi_theme_options[background_color]', array(
+    'type'        => 'color',
+    'settings'    => 'rimi_theme_options[background_color]',
+    'label'       => esc_html__( 'Background Color', 'rimi' ),
+    'section'     => 'background_settings',
+    'default'     => '',
+    'option_type' => 'option',
+    'priority'    => 10,
+  ) );
 
   Kirki::add_field( 'mt_colors_header', array(
     'type'        => 'multicolor',
@@ -328,14 +354,6 @@ function rimi_customize_colors($wp_customize){
     ),
   ));
 
-
-  // FOOTER COLORS //
-  $wp_customize->add_section('colors_footer', array(
-    'title'    	=> esc_html__('Footer Colors', 'rimi'),
-    'panel'  => 'colors_settings'
-  ));
-
-
   Kirki::add_field( 'mt_colors_footer_top', array(
     'type'        => 'multicolor',
     'settings'    => 'mt_colors_footer_top',
@@ -400,78 +418,64 @@ function rimi_customize_colors($wp_customize){
     ),
   ));
 
+Kirki::add_field( 'colors_post_share', array(
+  'type'        => 'multicolor',
+  'settings'    => 'colors_post_share',
+  'label'       => esc_attr__( 'Post Share Count', 'rimi' ),
+  'section'     => 'colors_other',
+  'option_type' => 'option',
+  'priority'    => 100,
+  'choices'     => array(
+      'text'    => esc_attr__( 'Text', 'rimi' ),
+      'text_dark'   => esc_attr__( 'Photo bg', 'rimi' ),
+      'icon'   => esc_attr__( 'Icon', 'rimi' ),
+      'icon_dark'   => esc_attr__( 'Photo bg', 'rimi' ),
+  ),
+  'default'     => array(
+      'text'    => '',
+      'text_dark'    => '',
+      'icon'    => '',
+      'icon_dark'    => '',
+  ),
+));
+Kirki::add_field( 'colors_post_view', array(
+  'type'        => 'multicolor',
+  'settings'    => 'colors_post_view',
+  'label'       => esc_attr__( 'Post View Count', 'rimi' ),
+  'section'     => 'colors_other',
+  'option_type' => 'option',
+  'priority'    => 100,
+  'choices'     => array(
+      'text'    => esc_attr__( 'Text', 'rimi' ),
+      'text_dark'   => esc_attr__( 'Photo bg', 'rimi' ),
+      'icon'   => esc_attr__( 'Icon', 'rimi' ),
+      'icon_dark'   => esc_attr__( 'Photo bg', 'rimi' ),
+  ),
+  'default'     => array(
+      'text'    => '',
+      'text_dark'    => '',
+      'icon'    => '',
+      'icon_dark'    => '',
+  ),
+));
 
-  // MENU COLORS //
-  $wp_customize->add_section('colors_other', array(
-    'title'    	=> esc_html__('Other Colors', 'rimi'),
-    'panel'  => 'colors_settings'
-  ));
+Kirki::add_field( 'mt_colors_cat', array(
+  'type'        => 'multicolor',
+  'settings'    => 'mt_colors_cat',
+  'label'       => esc_attr__( 'Post List Category', 'rimi' ),
+  'section'     => 'colors_other',
+  'option_type' => 'option',
+  'priority'    => 100,
+  'choices'     => array(
+      'text'    => esc_attr__( 'Text', 'rimi' ),
+      'background'   => esc_attr__( 'Background', 'rimi' ),
+      'only_text'   => esc_attr__( 'Only Text', 'rimi' ),
+  ),
+  'default'     => array(
+      'text'    => '',
+      'background'    => '',
+      'only_text'    => '',
+  ),
+));
 
-
-  Kirki::add_field( 'colors_post_share', array(
-    'type'        => 'multicolor',
-    'settings'    => 'colors_post_share',
-    'label'       => esc_attr__( 'Post Share Count', 'rimi' ),
-    'section'     => 'colors_other',
-    'option_type' => 'option',
-    'priority'    => 100,
-    'choices'     => array(
-        'text'    => esc_attr__( 'Text', 'rimi' ),
-        'text_dark'   => esc_attr__( 'Photo bg', 'rimi' ),
-        'icon'   => esc_attr__( 'Icon', 'rimi' ),
-        'icon_dark'   => esc_attr__( 'Photo bg', 'rimi' ),
-    ),
-    'default'     => array(
-        'text'    => '',
-        'text_dark'    => '',
-        'icon'    => '',
-        'icon_dark'    => '',
-    ),
-  ));
-  Kirki::add_field( 'colors_post_view', array(
-    'type'        => 'multicolor',
-    'settings'    => 'colors_post_view',
-    'label'       => esc_attr__( 'Post View Count', 'rimi' ),
-    'section'     => 'colors_other',
-    'option_type' => 'option',
-    'priority'    => 100,
-    'choices'     => array(
-        'text'    => esc_attr__( 'Text', 'rimi' ),
-        'text_dark'   => esc_attr__( 'Photo bg', 'rimi' ),
-        'icon'   => esc_attr__( 'Icon', 'rimi' ),
-        'icon_dark'   => esc_attr__( 'Photo bg', 'rimi' ),
-    ),
-    'default'     => array(
-        'text'    => '',
-        'text_dark'    => '',
-        'icon'    => '',
-        'icon_dark'    => '',
-    ),
-  ));
-
-  Kirki::add_field( 'mt_colors_cat', array(
-    'type'        => 'multicolor',
-    'settings'    => 'mt_colors_cat',
-    'label'       => esc_attr__( 'Post List Category', 'rimi' ),
-    'section'     => 'colors_other',
-    'option_type' => 'option',
-    'priority'    => 100,
-    'choices'     => array(
-        'text'    => esc_attr__( 'Text', 'rimi' ),
-        'background'   => esc_attr__( 'Background', 'rimi' ),
-        'only_text'   => esc_attr__( 'Only Text', 'rimi' ),
-    ),
-    'default'     => array(
-        'text'    => '',
-        'background'    => '',
-        'only_text'    => '',
-    ),
-  ));
-
-
-
-
-}
-
-add_action('customize_register', 'rimi_customize_colors');
 ?>

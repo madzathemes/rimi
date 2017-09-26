@@ -1,10 +1,16 @@
 <?php
 /**
  * @author madars.bitenieks
- * @copyright 2016
+ * @copyright 2017
  */
 ?>
-<?php get_header(); ?>
+<?php get_header();
+
+if ( false == get_theme_mod( 't_p_permalink_to', false ) ) { $t_p_permalink_to = esc_html__("Permalink to %s", "techpro");  } else { $t_p_permalink_to = get_theme_mod( 't_p_permalink_to' ).' %s'; }
+if ( false == get_theme_mod( 't_p_sorry_search', false ) ) { $t_p_sorry_search = esc_html__("Sorry, but nothing matched your search criteria. Please try again with some different keywords.", "techpro");  } else { $t_p_sorry_search = get_theme_mod( 't_p_sorry_search' ).' %s'; }
+if ( false == get_theme_mod( 't_p_nothing_found', false ) ) { $t_p_nothing_found = esc_html__("Nothing Found", "techpro");  } else { $t_p_nothing_found = get_theme_mod( 't_p_nothing_found' ); }
+
+?>
 <div class="mt-container-wrap">
 	<?php rimi_title(); ?>
 <div class="container mt-content-container">
@@ -21,25 +27,26 @@
 
 					if (have_posts() ) : ?>
 
-						<?php while ( have_posts() ) : the_post(); ?>
-							<h2><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo get_the_title();  ?></a></h2>
-						<?php endwhile;
+						<?php while ( have_posts() ) : the_post();
+							get_template_part( 'content', get_post_format() );
+						endwhile;
 						the_posts_pagination();
 						?>
 
 					<?php else : ?>
-						<p><?php esc_html_e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'rimi'  ); ?></p>
+						<p><?php echo esc_html($t_p_sorry_search); ?></p>
 					<?php endif;
 
 			} ?>
 
 		<?php else : ?>
 						<div id="post-0" class="post no-results not-found">
-							<h2 class="entry-title"><?php esc_html_e( 'Nothing Found', 'rimi'  ); ?></h2>
+							<h2 class="entry-title"><?php echo esc_html($t_p_nothing_found); ?></h2>
 							<div class="entry-content">
-								<p><?php esc_html_e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'rimi'  ); ?></p>
+								<p><?php echo esc_html($t_p_sorry_search); ?></p>
 
 							</div>
+							<?php get_search_form(); ?>
 						</div>
 
 		<?php endif; ?>
