@@ -3757,7 +3757,8 @@ blockquote {
     padding-left: 20px;
   }
   .post-style-6 .author-info,
-  .post-style-6 .author-img {
+  .post-style-6 .author-img,
+  .mt-post-meta {
     display: none
   }
 

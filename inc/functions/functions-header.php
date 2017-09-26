@@ -240,12 +240,12 @@ function rimi_header_fixed() {
 			$viewes = $view;
 		}
 		$url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
-		if ( false == get_theme_mod( 't_p_share_on_facebook', false ) ) { $t_p_share_on_facebook = esc_html__("Share on Facebook", "techpro");  } else { $t_p_share_on_facebook = get_theme_mod( 't_p_share_on_facebook' ); }
-		if ( false == get_theme_mod( 't_p_share_on_twitter', false ) ) { $t_p_share_on_twitter = esc_html__("Tweet on Twitter", "techpro");  } else { $t_p_share_on_twitter = get_theme_mod( 't_p_share_on_twitter' ); }
+		if ( false == get_theme_mod( 't_p_share_on_facebook', false ) ) { $t_p_share_on_facebook = esc_html__("Share on Facebook", "rimi");  } else { $t_p_share_on_facebook = get_theme_mod( 't_p_share_on_facebook' ); }
+		if ( false == get_theme_mod( 't_p_share_on_twitter', false ) ) { $t_p_share_on_twitter = esc_html__("Tweet on Twitter", "rimi");  } else { $t_p_share_on_twitter = get_theme_mod( 't_p_share_on_twitter' ); }
 
-		if ( false == get_theme_mod( 't_p_shares', false ) ) { $t_p_share_t = esc_html__("Shares", "techpro");  } else { $t_p_share_t = get_theme_mod( 't_p_shares' ); }
-		if ( false == get_theme_mod( 't_p_views', false ) ) { $t_p_views_t = esc_html__("Views", "techpro");  } else { $t_p_views_t = get_theme_mod( 't_p_views' ); }
-		if ( false == get_theme_mod( 'mt_translate_comments', false ) ) { $t_p_comments_t = esc_html__("Comments", "techpro");  } else { $t_p_comments_t = get_theme_mod( 'mt_translate_comments' ); }
+		if ( false == get_theme_mod( 't_p_shares', false ) ) { $t_p_share_t = esc_html__("Shares", "rimi");  } else { $t_p_share_t = get_theme_mod( 't_p_shares' ); }
+		if ( false == get_theme_mod( 't_p_views', false ) ) { $t_p_views_t = esc_html__("Views", "rimi");  } else { $t_p_views_t = get_theme_mod( 't_p_views' ); }
+		if ( false == get_theme_mod( 'mt_translate_comments', false ) ) { $t_p_comments_t = esc_html__("Comments", "rimi");  } else { $t_p_comments_t = get_theme_mod( 'mt_translate_comments' ); }
 		?>
 		<?php $option = get_option("rimi_theme_options"); ?>
 				<div class="fixed-top">

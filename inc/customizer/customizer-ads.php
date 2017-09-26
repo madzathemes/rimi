@@ -354,7 +354,6 @@ function rimi_customize_ads($wp_customize){
     ),
   ));
 
-
 }
 
 add_action('customize_register', 'rimi_customize_ads');

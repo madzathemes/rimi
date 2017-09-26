@@ -6,9 +6,9 @@
 ?>
 <?php get_header();
 
-if ( false == get_theme_mod( 't_p_permalink_to', false ) ) { $t_p_permalink_to = esc_html__("Permalink to %s", "techpro");  } else { $t_p_permalink_to = get_theme_mod( 't_p_permalink_to' ).' %s'; }
-if ( false == get_theme_mod( 't_p_sorry_search', false ) ) { $t_p_sorry_search = esc_html__("Sorry, but nothing matched your search criteria. Please try again with some different keywords.", "techpro");  } else { $t_p_sorry_search = get_theme_mod( 't_p_sorry_search' ).' %s'; }
-if ( false == get_theme_mod( 't_p_nothing_found', false ) ) { $t_p_nothing_found = esc_html__("Nothing Found", "techpro");  } else { $t_p_nothing_found = get_theme_mod( 't_p_nothing_found' ); }
+if ( false == get_theme_mod( 't_p_permalink_to', false ) ) { $t_p_permalink_to = esc_html__("Permalink to %s", "rimi");  } else { $t_p_permalink_to = get_theme_mod( 't_p_permalink_to' ).' %s'; }
+if ( false == get_theme_mod( 't_p_sorry_search', false ) ) { $t_p_sorry_search = esc_html__("Sorry, but nothing matched your search criteria. Please try again with some different keywords.", "rimi");  } else { $t_p_sorry_search = get_theme_mod( 't_p_sorry_search' ).' %s'; }
+if ( false == get_theme_mod( 't_p_nothing_found', false ) ) { $t_p_nothing_found = esc_html__("Nothing Found", "rimi");  } else { $t_p_nothing_found = get_theme_mod( 't_p_nothing_found' ); }
 
 ?>
 <div class="mt-container-wrap">
