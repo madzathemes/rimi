@@ -76,7 +76,7 @@ if(!empty($option['mobile_header_type'])) {
 		</div>
 	</div>
 
-	<div class="header-menu mt-header-container <?php echo esc_attr($menu_full); ?>">
+	<div class="header-menu mt-header-container <?php echo esc_attr($menu_full); ?>  <?php if ( false == get_theme_mod( 'mt_menu_small_on', false )) { ?>mt-small-menu-off<?php } ?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">

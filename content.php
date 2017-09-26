@@ -15,18 +15,18 @@ if(is_single()) { $more = 1; }?>
 				<?php if(is_single()) {
 					if(!empty($image_settings)) {
 						if($image_settings=="yes") {
-							echo get_the_post_thumbnail(get_the_ID(),"full");
+							echo get_the_post_thumbnail(get_the_ID(),"large");
 						}
 					} else if(!empty($options['post_standart_image'])) {
 						if($options['post_standart_image']=="yes") {
-							echo get_the_post_thumbnail(get_the_ID(),"full");
+							echo get_the_post_thumbnail(get_the_ID(),"large");
 						}
 					} else {
-						echo get_the_post_thumbnail(get_the_ID(),"full");
+						echo get_the_post_thumbnail(get_the_ID(),"large");
 					}
 				} else { ?>
 					<a href="<?php the_permalink(); ?>">
-						<?php echo get_the_post_thumbnail(get_the_ID(),"full"); ?>
+						<?php echo get_the_post_thumbnail(get_the_ID(),"large"); ?>
 					</a>
 				<?php } ?>
 			</div>
@@ -52,7 +52,7 @@ if(is_single()) { $more = 1; }?>
 
 		if(!is_single()) {
 
-		 the_content();
+		 the_excerpt();
 
 		} else {
 
@@ -61,6 +61,7 @@ if(is_single()) { $more = 1; }?>
 		}
 
 		?>
+		<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo esc_html__( 'Read More', 'rimi' );  ?></a>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rimi' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php } ?>

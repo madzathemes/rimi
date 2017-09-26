@@ -649,9 +649,9 @@ table {
   padding-bottom: 0px;
 }
 .widget label.screen-reader-text { display: none; }
-.gallery-caption{}
-.bypostauthor{}
-.sticky {}
+.gallery-caption,
+.bypostauthor,
+.sticky { position: relative }
 
 
 /* Layouts */
@@ -2785,7 +2785,10 @@ h2.heading span,
 body.blog article {
   padding-bottom: 40px;
   margin-bottom: 40px;
-  border-bottom: 2px solid #dedede;
+  border-bottom: 2px solid #ff6226;
+}
+body.blog article .entry-title {
+  padding-bottom: 15px;
 }
 .single .entry-content {
   padding-right: 49px;
@@ -4615,4 +4618,7 @@ img.mfp-img {
   position: fixed;
   left: 0;
   top: 0;
+}
+.mt-small-menu-off .top-nav {
+  padding-left: 10px;
 }
