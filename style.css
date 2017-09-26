@@ -2795,6 +2795,19 @@ body.blog article .entry-title {
 body.blog article .post-img {
   margin-bottom: 40px;
 }
+.mt-post-btn {
+  padding: 10px 20px;
+  color: white;
+  background: #ff6226;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+}
+.mt-post-btn:hover {
+  color: #222;
+  background: #f6f5f6;
+}
 .single .entry-content {
   padding-right: 49px;
   padding-left: 40px;

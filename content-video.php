@@ -52,7 +52,7 @@ $allowed_html = array('iframe' => array( 'id' => array(),'width' => array(), 'al
 
 	<?php if (!is_single()){?>
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php echo get_the_title();  ?></a></h1>
+		<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php echo get_the_title();  ?></a></h2>
 	</header>
 	<?php } ?>
 
@@ -60,7 +60,7 @@ $allowed_html = array('iframe' => array( 'id' => array(),'width' => array(), 'al
 		<div class="entry-content">
 			<?php if( ! is_single()) { the_excerpt(); ?>
 
-			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo esc_html__( 'Read More', 'rimi' );  ?></a> <?php	} else { the_content(); }  ?>
+			<a  class="mt-post-btn" href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo esc_html__( 'Read More', 'rimi' );  ?></a> <?php	} else { the_content(); }  ?>
 		</div>
 	<?php } ?>
 

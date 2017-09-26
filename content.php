@@ -61,7 +61,7 @@ if(is_single()) { $more = 1; }?>
 		}
 
 		?>
-		<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo esc_html__( 'Read More', 'rimi' );  ?></a>
+		<a  class="mt-post-btn" href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo esc_html__( 'Read More', 'rimi' );  ?></a>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rimi' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php } ?>
