@@ -2784,11 +2784,12 @@ h2.heading span,
 }
 body.blog article {
   padding-bottom: 40px;
-  margin-bottom: 40px;
-  border-bottom: 2px solid #ff6226;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ff6226;
 }
 body.blog article .entry-title {
   padding-bottom: 15px;
+  line-height: 1;
 }
 .single .entry-content {
   padding-right: 49px;
