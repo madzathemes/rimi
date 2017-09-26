@@ -58,7 +58,9 @@ $allowed_html = array('iframe' => array( 'id' => array(),'width' => array(), 'al
 
 	<?php if ( !is_search() ) { ?>
 		<div class="entry-content">
-			<?php if( ! is_single()) { the_excerpt();	} else { the_content(); }  ?>
+			<?php if( ! is_single()) { the_excerpt(); ?>
+
+			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'rimi' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php echo esc_html__( 'Read More', 'rimi' );  ?></a> <?php	} else { the_content(); }  ?>
 		</div>
 	<?php } ?>
 
