@@ -2513,7 +2513,7 @@ h2.heading span,
   font-family: "madza";
   color: #7a7b86;
   width: 30px;
-  top: -12px;
+  top: -13px;
   font-size: 14px;
   right: -40px;
   left: inherit;
@@ -2528,7 +2528,7 @@ h2.heading span,
   font-family: "madza";
   color: #7a7b86;
   width: 30px;
-  top: -12px;
+  top: -13px;
   font-size: 14px;
   left: -40px;
   right: inherit;
@@ -2544,6 +2544,7 @@ h2.heading span,
 .nav-single li span {
   font-size: 11px;
   font-weight: 700;
+  padding-bottom: 2px;
 }
 .nav-single li div {
   font-size: 16px;
