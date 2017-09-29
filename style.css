@@ -2551,6 +2551,11 @@ h2.heading span,
   color: #000113;
   position: relative;
 }
+.nav-single a:hover :before,
+.nav-single a:hover :after, {
+  background: #ff6226;
+  color: white;
+}
 
 /* Author BIO CHANGES */
 .mt-bio-social {
