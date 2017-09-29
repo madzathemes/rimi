@@ -2515,7 +2515,8 @@ h2.heading span,
   width: 30px;
   top: -13px;
   font-size: 14px;
-  margin-right: -40px;
+  right: -40px;
+  left: inherit;
   padding: 9px;
   display: inline-block;
   position: absolute;
@@ -2529,7 +2530,8 @@ h2.heading span,
   width: 30px;
   top: -13px;
   font-size: 14px;
-  margin-left: -40px;
+  left: -40px;
+  right: inherit;
   padding: 9px;
   display: inline-block;
   position: absolute;
@@ -2539,12 +2541,12 @@ h2.heading span,
 .nav-single li {
   width: 50%;
 }
-.nav-single li span {fix
+.nav-single li span {
   font-size: 11px;
   font-weight: 700;
 }
 .nav-single li div {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 900;
   color: #000113;
   position: relative;
