@@ -126,6 +126,48 @@ input,
   -o-transition: all 600ms ease-out!important;
   transition: all 600ms ease-out!important;
 }
+.mt-radius-5 .mt-radius,
+.mt-radius-5 .mt-radius-b:before,
+.mt-radius-5 textarea,
+.mt-radius-5 input,
+.mt-radius-5 .dropdown-menu,
+.mt-radius-5 .sub-menu,
+.mt-radius-5 ul.sf-menu ul li a,
+.mt-radius-5 div.sf-menu ul ul li a,
+.mt-radius-5 .df-is-megamenu ul li,
+.mt-radius-5 .mt-coment-nav a,
+.mt-radius-5 .poster-small-bottom-wrap,
+.mt-radius-5 .mt-sidebar-in,
+.mt-radius-5 .commentlist article.comment,
+.mt-radius-5 .comment-reply-link,
+.mt-radius-5 .tags a,
+.mtc-border-5  {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.mt-radius-25 .mt-radius,
+.mt-radius-25 .mt-radius-b:before,
+.mt-radius-25 textarea,
+.mt-radius-25 input,
+.mt-radius-25 .dropdown-menu,
+.mt-radius-25 .sub-menu,
+.mt-radius-25 ul.sf-menu ul li a,
+.mt-radius-25 div.sf-menu ul ul li a,
+.mt-radius-25 .df-is-megamenu ul li,
+.mt-radius-25 .mt-coment-nav a,
+.mt-radius-25 .poster-small-bottom-wrap,
+.mt-radius-25 .mt-sidebar-in,
+.mt-radius-25 .commentlist article.comment,
+.mt-radius-25 .comment-reply-link,
+.mt-radius-25 .tags a,
+.mtc-border-25,
+.mct-box:hover:before,
+.mct-box.active:before {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
 body {
   font-family: 'Lato', sans-serif;
 }
