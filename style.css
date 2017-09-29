@@ -1060,7 +1060,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 
 /* HEAD MENU GLOBAL */
 .menu-background {
-  background: #9d9da1;
+  background: #7a7b86;
 }
 .top-nav {
   color: white;
@@ -1317,7 +1317,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
   padding: 16px 20px;
   height: 48px;
   border-left: 10px solid white;
-  background: #7a7b86;
+  background: #ff6226;
   display: inline-block;
 }
 .nav-url a:hover {
