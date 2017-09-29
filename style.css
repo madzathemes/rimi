@@ -1050,7 +1050,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 .head-bookmark a {
   padding: 5px 0px 5px 0px;
   font-size: 13px;
-  color: #9d9da1;
+  color: #ff6226;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1060,7 +1060,7 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 
 /* HEAD MENU GLOBAL */
 .menu-background {
-  background: #ff6226;
+  background: #9d9da1;
 }
 .top-nav {
   color: white;
@@ -2513,7 +2513,7 @@ h2.heading span,
   font-family: "madza";
   color: #7a7b86;
   width: 30px;
-  top: -13px;
+  top: -12px;
   font-size: 14px;
   right: -40px;
   left: inherit;
@@ -2552,8 +2552,8 @@ h2.heading span,
   color: #000113;
   position: relative;
 }
-.nav-single a:hover .next div:before,
-.nav-single a:hover .next div:after, {
+.nav-single .next a:hover div:after,
+.nav-single .previous a:hover div:before, {
   background: #ff6226;
   color: white;
 }
