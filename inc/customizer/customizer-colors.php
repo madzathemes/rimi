@@ -80,20 +80,6 @@ function rimi_customize_colors($wp_customize){
 
 add_action('customize_register', 'rimi_customize_colors');
 
-Kirki::add_field( 'radius', array(
-'type'        => 'radio-buttonset',
-'settings'    => 'radius',
-'label'       => esc_html__( 'Border Radius', 'rimi' ),
-'section'     => 'general_style_settings',
-'default'     => '5px',
-'priority'    => 1,
-'option_type' => 'option',
-'choices'     => array(
-  '0px'   => esc_attr__( '0px', 'rimi' ),
-  '5px' => esc_attr__( '5px', 'rimi' ),
-  '25px' => esc_attr__( '25px', 'rimi' ),
-),
-));
 
   Kirki::add_field( 'rimi_theme_options[background_image]', array(
     'type'        => 'image',
