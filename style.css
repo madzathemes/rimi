@@ -2502,35 +2502,39 @@ h2.heading span,
   margin: 0px 0px 40px 0px;
 }
 .nav-single .previous {
-  padding: 0px 30px;
+  padding: 0px 40px;
 }
 .nav-single .next {
   text-align: right;
-  padding: 0px 30px;
+  padding: 0px 40px;
 }
 .nav-single .next div:after {
   content: "\62";
   font-family: "madza";
-  color: #ff6226;
+  color: #7a7b86;
   width: 30px;
-  font-size: 21px;
-  margin-right: -30px;
-  padding-left: 5px;
-  top: 0px;
+  top: -13px;
+  font-size: 14px;
+  margin-right: -40px;
+  padding: 9px;
   display: inline-block;
   position: absolute;
+  background: #f6f5f6;
+  height: 30px;
 }
 .nav-single .previous div:before {
   content: "\61";
   font-family: "madza";
-  color: #ff6226;
+  color: #7a7b86;
   width: 30px;
-  top: 0px;
-  font-size: 21px;
-  margin-left: -30px;
-  padding-right: 5px;
+  top: -13px;
+  font-size: 14px;
+  margin-left: -40px;
+  padding: 9px;
   display: inline-block;
   position: absolute;
+  background: #f6f5f6;
+  height: 30px;
 }
 .nav-single li {
   width: 50%;
@@ -3032,6 +3036,10 @@ blockquote {
   padding-top: 10px;
   font-size: 14px;
   padding: 1px 0px;
+}
+.comment-content br {
+  height: 0px;
+  line-height: 0px;
 }
 .commentlist .pingback:first-child {
   margin-top: 20px;
