@@ -616,9 +616,9 @@ table {
   padding-bottom: 0px;
 }
 .widget label.screen-reader-text { display: none; }
-.gallery-caption{}
-.bypostauthor{}
-.sticky {}
+.gallery-caption,
+.bypostauthor,
+.sticky { position: relative; }
 
 
 /* Layouts */
