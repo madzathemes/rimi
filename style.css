@@ -524,6 +524,7 @@ code,kbd,pre,samp {
   font-size: 14px;
   margin-bottom: 2px;
   vertical-align: middle;
+  max-width: 100%;
 }
 pre {
   margin-top: 0px;
@@ -570,6 +571,7 @@ blockquote p {
 .wp-caption {
   padding: 0px;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 .wp-caption.aligncenter,
 .wp-caption.alignleft,
@@ -1430,10 +1432,10 @@ h2.heading.heading-right {
   text-align: right;
 }
 h2.heading.heading-left span {
-  padding: 3px 10px;
+  padding: 0px 0px;
 }
 h2.heading.heading-right span {
-  padding: 3px 10px;
+  padding: 0px 0px;
 }
 h2.heading span,
 .pagination > h2 {
@@ -1441,7 +1443,7 @@ h2.heading span,
   border-left: 0px solid #7a7b86;
   z-index: 2;
   position: relative;
-  padding: 3px 10px;
+  padding: 0px 0px;
   letter-spacing: 1px;
 }
 .title_bg_fix h2.heading span {

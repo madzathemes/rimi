@@ -7,7 +7,7 @@ $image_settings = get_post_meta(get_the_ID(), "magazin_post_image", true);
 $options = get_option("rimi_theme_options");
 
 if(is_single()) { $more = 1; }?>
-<article id="post-<?php the_ID(); ?>" class="mt-blog-post <?php if ( is_sticky() and !is_single()){ ?> post_sticky <?php } ?>">
+<article id="post-<?php the_ID(); ?>"  class="mt-blog-post <?php if ( is_sticky() and !is_single()){ ?> post_sticky <?php } ?>" <?php post_class(); ?>>
 
 	<?php if( ! is_search()) { ?>
 		<?php  if ( has_post_thumbnail() ) { ?>

@@ -27,7 +27,7 @@ function rimi_register_required_plugins() {
 
 
         array(
-            'name'			=> esc_html__( "Envato Market (Auto Theme Update)","rimi" ), // The plugin name
+            'name'			=> esc_html__( "Envato Market (One Click Updates)","rimi" ), // The plugin name
             'slug'			=> 'envato-market', // The plugin slug (typically the folder name)
             'source'			=> get_template_directory() . '/all_plugins/envato-market.zip', // The plugin source
             'required'			=> true, // If false, the plugin is only 'recommended' instead of required
