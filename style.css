@@ -2618,9 +2618,9 @@ h2.heading span,
 }
 .author-description h5 {
   padding: 5px 0px 5px 50px;
-  font-size: 12px;
-  color: #999;
-  font-weight: 400;
+  font-size: 11px;
+  color: #7a7b86;
+  font-weight: 700;
 }
 .single .author-info a {
   font-weight: bold;
