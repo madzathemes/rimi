@@ -90,7 +90,9 @@ input,
 .poster-prev,
 .post-gallery-nav .slick-arrow.slick-prev:before,
 .post-gallery-nav .slick-arrow.slick-next:before,
-.df-is-megamenu ul {
+.df-is-megamenu ul,
+.nav-single a:hover div:before,
+.nav-single a:hover div:after {
   -webkit-transition: all 100ms ease-out!important;
   -moz-transition: all 100ms ease-out!important;
   -ms-transition: all 100ms ease-out!important;
@@ -2552,9 +2554,9 @@ h2.heading span,
   color: #000113;
   position: relative;
 }
-.nav-single .next a:hover div:after,
-.nav-single .previous a:hover div:before, {
-  background: #ff6226;
+.nav-single a:hover div:before,
+.nav-single a:hover div:after {
+  background: #ff6226 !important;
   color: white;
 }
 
