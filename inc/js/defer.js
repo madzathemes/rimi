@@ -102,7 +102,7 @@ jQuery(document).ready(function() {
     return false;
 
 	});
-
+jQuery(".mt-smart-menu .menu-item-has-children").append("<span></span>");
   jQuery('.footer-scroll-to-top, .footer-scroll-to-top-link').click(function(){
 		jQuery('html, body').animate({scrollTop : 0},400);
 		return false;
