@@ -3,7 +3,7 @@
 <div class="post-content-wrap mt-content-container">
   <div class="container">
     <div class="row">
-      <div class="single-content col-md-8 <?php echo sanitize_html_class($fl); ?>">
+      <div class="single-content <?php if ( !is_active_sidebar( 'sidebar-single-widget-area' ) ) { ?> col-md-offset-2 <?php } ?> col-md-8 <?php echo sanitize_html_class($fl); ?>">
         <?php rimi_single_cat(); ?>
         <?php rimi_single_title(); ?>
         <?php rimi_single_social(); ?>
