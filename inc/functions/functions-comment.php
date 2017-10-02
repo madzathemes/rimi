@@ -81,7 +81,7 @@ function rimi_comment( $comment, $args, $depth ) {
 								esc_url( get_comment_link( $comment->comment_ID ) ),
 								get_comment_time( 'Y-m-d' ),
 								/* translators: 1: date, 2: time */
-								sprintf( esc_html__( '%1$s at %2$s', 'rimi' ), get_comment_date('Y-m-d' ), get_comment_time() )
+								sprintf( esc_html__( '%1$s at %2$s', 'rimi' ), get_comment_date(), get_comment_time() )
 							)
 						);
 					?><?php edit_comment_link( esc_html__( ' Edit', 'rimi' ), '<span class="edit-link">', '</span>' ); ?>
