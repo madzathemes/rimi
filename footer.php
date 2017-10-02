@@ -51,7 +51,7 @@
 								<div class="col-md-5 footer-social">
 									<h2><?php echo esc_html__('Follow Us', 'rimi'); ?></h2>
 									<?php rimi_socials(); ?>
-									<p><?php echo html_entity_decode(get_theme_mod('rimi_footer_follow_us', 'Donec eu tellus convallis, vehicula neque sed')); ?></p>
+									<p><?php echo get_theme_mod('rimi_copyright_text', esc_html__( 'Copyright 2017. Powered by WordPress Theme. By Madars Bitenieks.', 'xnews' )); ?></p>
 								</div>
 							</div>
 						</div>
@@ -64,7 +64,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6 footer-copyright">
-									<p><?php echo html_entity_decode(get_theme_mod('rimi_copyright_text', 'Copyright 2017. Powered by WordPress Theme. By Madars Bitenieks')); ?></p>
+									<p><?php echo get_theme_mod('rimi_copyright_text', esc_html__( 'Copyright 2017. Powered by WordPress Theme. By Madars Bitenieks.', 'xnews' )); ?></p>
 								</div>
 									<div class="col-md-6">
 										<?php wp_nav_menu( array('theme_location'  => "footer_menu", 'container' =>false, 'fallback_cb' => false, 'menu_class' => 'footer-nav', 'menu_id' => '','echo' => true, 'before' => '','after' => '', 'link_before' => '','link_after' => '', 'depth' => 1));  ?>
