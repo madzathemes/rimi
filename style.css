@@ -1418,7 +1418,8 @@ ul.sf-menu ul li, div.sf-menu ul ul li {
 
 /* HEADING */
 h2.heading,
-.pagination > h2 {
+.pagination > h2,
+h3.comment-reply-title {
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -1427,8 +1428,10 @@ h2.heading,
   padding-top: 0px;
   color: #7a7b86;
 }
+h3.comment-reply-title { margin-top: 40px; }
 h2.heading.heading-left,
-.pagination > h2 {
+.pagination > h2,
+h3.comment-reply-title {
   text-align: left;
 }
 h2.heading.heading-right {
@@ -1441,12 +1444,11 @@ h2.heading.heading-right span {
   padding: 0px 0px;
 }
 h2.heading span,
-.pagination > h2 {
-  background: white;
+.pagination > h2,
+h3.comment-reply-title  {
   border-left: 0px solid #7a7b86;
   z-index: 2;
   position: relative;
-  padding: 0px 0px;
   letter-spacing: 1px;
 }
 .title_bg_fix h2.heading span {
@@ -2550,9 +2552,9 @@ h2.heading span,
   padding-bottom: 2px;
 }
 .nav-single li div {
-  font-size: 16px;
-  font-weight: 900;
-  color: #000113;
+  font-size: 14px;
+  font-weight: bold;
+  color: #111;
   position: relative;
 }
 .nav-single a:hover div:before,
@@ -2670,7 +2672,7 @@ h2.heading span,
 }
 
 .single .author-info a {
-  font-size: 12px;
+  font-size: 14px;
 }
 .single-media-title .author-info a {
   color: white !important;
