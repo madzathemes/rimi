@@ -46,7 +46,7 @@
 								<div class="col-md-4 footer-about">
 									<h2><?php echo esc_html__('About Us', 'rimi'); ?></h2>
 									<p><?php echo get_theme_mod('rimi_footer_about_us', esc_html__( 'Donec eu tellus convallis, vehicula neque sed, mattis elit. Praesent ornare, ligula in efficitur egestas, massa lacus vulputate enim', 'rimi' )); ?> </p>
-									<p><?php echo esc_html__('Contact us:', 'rimi'); ?> <a class="mail" href="mailto:<?php echo esc_html(get_theme_mod('rimi_footer_about_us_mail', 'info@example.com')); ?>" target="_top"><?php echo esc_html(get_theme_mod('rimi_footer_about_us_mail', 'info@rimi.com')); ?></a></p>
+									<p><?php echo esc_html__('Contact us:', 'rimi'); ?> <a class="mail" href="mailto:<?php echo esc_html(get_theme_mod('rimi_footer_about_us_mail', 'info@example.com')); ?>" target="_top"><?php echo esc_html(get_theme_mod('rimi_footer_about_us_mail', 'info@example.com')); ?></a></p>
 								</div>
 								<div class="col-md-5 footer-social">
 									<h2><?php echo esc_html__('Follow Us', 'rimi'); ?></h2>
