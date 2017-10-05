@@ -74,13 +74,13 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
       <?php echo html_entity_decode($optionz['article_ad_bottom']); ?>
     </div>
   <?php } ?>
-
+<?php if ( true == get_theme_mod( 'mt_post_prev_next_article', true ) ) { ?>
   <ul class="nav-single">
     <li class="previous pull-left"><?php previous_post_link( '%link', '<span class="color-silver-light">' . esc_html__( 'Previous article','rimi' ) . '</span><div>%title</div>' ); ?></li>
     <li class="next pull-right"><?php next_post_link( '%link', ' <span class="color-silver-light">' . esc_html__( 'Next article','rimi' ) . '</span><div>%title</div>' ); ?></li>
     <li class="clearfix"></li>
   </ul>
-
+<?php } ?>
   <?php if ( is_active_sidebar( 'sidebar-single-bottom-widget-area-before' ) ) {
 
     dynamic_sidebar( 'sidebar-single-bottom-widget-area-before' );
